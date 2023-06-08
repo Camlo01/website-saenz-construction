@@ -1,0 +1,88 @@
+/* Navbar styles */
+.navbar {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    width: 100vw;
+    padding: 0px 30px 0px 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar__image {
+    margin: 15px;
+}
+
+
+.navbar__image img {
+    width: 87px;
+    height: auto;
+    background-color: none;
+}
+
+.navbar__options {
+    padding: 10px;
+}
+
+.navbar__phone {
+    /* margin-top: 39px; */
+    display: flex;
+    align-items: center;
+    Justify-content: end;
+    padding: 24px 0px 15px;
+}
+
+
+.navbar__phone p {
+    color: #b90000;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-right: 22px;
+}
+
+.navbar__phone button {
+    background-color: yellow;
+    border: none;
+    padding: 8px 10px;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+.navbar__phone button:hover {
+    color: white;
+}
+
+.navbar__nav {
+    display: flex;
+    /* margin-top: 20px; */
+}
+
+
+.navbar__nav ul {
+    display: flex;
+}
+
+.navbar__nav ul li {
+    display: block;
+}
+
+.navbar__nav ul li a {
+    padding: 14px 20px;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: rgb(124, 124, 124);
+    text-decoration: none;
+}
+
+.navbar__nav ul li a:hover {
+    /* background-color: rgb(219, 219, 219); */
+    color: gray;
+}
+
+/* Styles for work comfortably */
+header {
+    /* padding-top: 100px; */
+    height: 1200px;
+    background-color: rgb(109, 105, 105);
+}
