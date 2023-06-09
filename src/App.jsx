@@ -1,12 +1,12 @@
 import './App.css'
 import Header from './header/Header'
-
+import Services from './services/ServicesSection'
 function App() {
 
   return (
     <>
       <Header />
-      <div style={{height:"800px"}}></div>
+      <Services />
 
     </>
   )
