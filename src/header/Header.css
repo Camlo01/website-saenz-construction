@@ -1,31 +1,29 @@
 /* Navbar styles */
 .navbar {
-    position: sticky;
-    top: 0;
-    background-color: white;
+    position: fixed;
+    background-color: transparent;
     width: 100vw;
-    padding: 0px 30px 0px 5px;
+    padding: 0px 30px 0px 0px;
     display: flex;
+    /* display: none; */
     justify-content: space-between;
+    transition: all 0.3s;
 }
 
 .navbar__image {
     margin: 15px;
 }
 
-
 .navbar__image img {
-    width: 87px;
-    height: auto;
     background-color: none;
+    transition: all 0.3s;
 }
 
 .navbar__options {
-    padding: 10px;
+    padding: 15px;
 }
 
 .navbar__phone {
-    /* margin-top: 39px; */
     display: flex;
     align-items: center;
     Justify-content: end;
@@ -34,14 +32,14 @@
 
 
 .navbar__phone p {
-    color: #b90000;
+    color: var(--color-red);
     font-size: 1.5rem;
     font-weight: 600;
     margin-right: 22px;
 }
 
 .navbar__phone button {
-    background-color: yellow;
+    background-color: var(--color-yellow);
     border: none;
     padding: 8px 10px;
     border-radius: 25px;
@@ -58,6 +56,9 @@
     /* margin-top: 20px; */
 }
 
+.nav-buttons {
+    transition: color 0.2s;
+}
 
 .navbar__nav ul {
     display: flex;
@@ -68,21 +69,166 @@
 }
 
 .navbar__nav ul li a {
-    padding: 14px 20px;
+    padding: 12px 20px;
     font-weight: 600;
-    font-size: 1.2rem;
-    color: rgb(124, 124, 124);
+    font-size: 1rem;
     text-decoration: none;
 }
 
 .navbar__nav ul li a:hover {
     /* background-color: rgb(219, 219, 219); */
-    color: gray;
+    color: rgb(48, 47, 47);
 }
 
 /* Styles for work comfortably */
 header {
     /* padding-top: 100px; */
-    height: 1200px;
+    max-width: auto;
+    height: 100%;
     background-color: rgb(109, 105, 105);
+}
+
+.header {
+    /* height: 100%; */
+    height: 900px;
+    padding-top: 126px;
+    /* background-color: rgb(182, 182, 182); */
+    background-image: url("../src/assets/images/roof.png");
+    background-size: 100%;
+    background-size: 100%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+.header__items-container {
+    display: flex;
+    align-items: center;
+    margin: -10 auto;
+    /* max-width: 1400px; */
+    justify-content: space-evenly;
+    padding-bottom: 75px;
+    /* width: 100vw; */
+    background-color: rgba(0, 0, 0, 0.409);
+}
+
+.header__title {
+    /* background-color: red; */
+    color: white;
+    max-width: 720px;
+}
+
+.header__title>* {
+    margin: 15px 0px;
+}
+
+.header__title h1 {
+    font-size: 3.3rem;
+    font-weight: 800;
+    line-height: 1.1;
+}
+
+.header__title p {
+    font-size: 1.2rem;
+}
+
+.header__google-reviews {
+    height: 138px;
+    width: 210px;
+    background-color: #000000d8;
+    border-radius: 8px;
+}
+
+.header__form {
+    background-color: #000000c7;
+    min-width: 318px;
+    height: 645px;
+    border-radius: 8px;
+}
+
+.header-rate {
+    width: 100%;
+    height: 320px;
+    background-color: #262626;
+}
+
+.header-rate__calification {
+    width: 900px;
+    height: 150px;
+    background-color: white;
+    margin: 0 auto;
+    display: block;
+    position: absolute;
+    left: calc(50% - 450px);
+    margin-top: -45px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    /* margin-top: -100px; */
+    /* position: 0; */
+}
+
+.rate-calification__card {
+    width: 210px;
+    /* height: 140px; */
+    /* background-color: gray; */
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    padding-bottom: 20px;
+}
+
+
+.rate-calification__card img {
+    background-color: red;
+    min-width: 55px;
+    height: 55px;
+    margin-right: 12px;
+}
+
+.calification-card__text h2 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: var(--color-yellow);
+}
+
+
+.calification-card__text p {
+    font-size: 85%;
+    max-width: 75%;
+}
+
+.header-rate-title {
+    padding-top: 135px;
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 1400px;
+    margin: 0 auto;
+    color: white;
+}
+
+.header-rate-title__title {
+    display: flex;
+    flex-direction: column;
+    max-width: 488px;
+    height: 90px;
+    justify-content: space-between;
+}
+
+
+.header-rate-title__title h3 {
+    font-size: 1.12rem;
+}
+
+.header-rate-title__title h2 {
+    font-size: 2.62rem;
+}
+
+.header-rate-title__body {}
+
+.header-rate-title__body p {
+    font-size: 1.12rem;
+    line-height: 160%;
+    font-weight: 300;
+    width: 672px;
 }
