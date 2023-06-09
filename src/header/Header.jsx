@@ -9,7 +9,7 @@ export default function Header() {
             <header>
                 <section className='navbar' id='navbarElement'>
                     <div className='navbar__image' >
-                        <img src='../src/assets/images/website-icon-nav.png' alt="Logo de la empresa" id='icon-navbar' />
+                        <img src={'website-icon-nav.png'} alt="Logo de la empresa" id='icon-navbar' />
                     </div>
                     <div className='navbar__options'>
                         <div className='navbar__phone'>
