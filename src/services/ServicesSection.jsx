@@ -1,5 +1,4 @@
 import "./ServicesSection.css"
-import "./ServiceSectionLogic"
 
 export default function Services() {
 
