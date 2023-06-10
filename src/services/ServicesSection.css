@@ -1,3 +1,179 @@
-.services {
+.section-services {
     margin-top: 265px;
+}
+
+.section-services__text {
+    padding: 80px 0px;
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+
+#our-services {
+    color: var(--color-yellow);
+    font-weight: 600;
+}
+
+.section-services__text p {
+    font-size: 1.12rem;
+    margin-bottom: 10px;
+}
+
+.section-services__text h2 {
+    font-size: 3.12rem;
+    margin: 20px 0px;
+    font-weight: 800;
+}
+
+
+.services-cards__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1450px;
+    margin: 0 auto;
+}
+
+.services-card__container {
+    min-width: 700px;
+    max-width: 700px;
+    height: 490px;
+    cursor: pointer;
+}
+
+.services__card {
+    min-width: 700px;
+    max-width: 700px;
+    height: 490px;
+    transition: all 0.25s;
+
+    border-width: 1px;
+    border: solid 1px rgb(209, 209, 209);
+    border-top: solid 5px var(--color-yellow);
+    background-color: white;
+    border-radius: 5px;
+
+    z-index: 1;
+    /* Valor más bajo para el div atrás */
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.services__card:hover {
+    position: sticky;
+    min-width: 720px;
+    max-width: 720px;
+    height: 510px;
+    margin-top: -10px;
+    margin-left: -10px;
+
+    z-index: 2;
+    /* Valor más bajo para el div atrás */
+    -webkit-box-shadow: -1px 3px 16px 4px rgba(0, 0, 0, 0.52);
+    -moz-box-shadow: -1px 3px 16px 4px rgba(0, 0, 0, 0.52);
+    box-shadow: -1px 3px 16px 4px rgba(0, 0, 0, 0.52);
+    width: 750px;
+}
+
+.services__card:hover .services-card__text {
+    width: 640px;
+    height: 426px;
+}
+
+.services-card__text-layer {
+    transition: all 0.2s;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.services__card button {
+    background-color: var(--color-yellow);
+    border: none;
+    padding: 8px 30px;
+    border-radius: 25px;
+    min-width: 150px;
+    font-size: 1rem;
+    font-weight: 800;
+    margin: 0 auto;
+    margin-top: 175px;
+    transition: margin 0.35s ease-in;
+}
+
+.services__card:hover .services-card__text-layer {
+    background-color: rgba(255, 255, 255, 0.767);
+}
+
+.services__card:hover .services-card__body {
+    display: block;
+}
+
+.services__card:hover button {
+    margin-top: 40px;
+}
+
+
+#card-services-roofing {
+    background-image: url("card-services-roofing.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#card-services-gutters {
+    background-image: url("card-services-gutter.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#card-services-siding {
+    background-image: url("card-services-gutter.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#card-services-insure {
+    background-image: url("card-services-roofing.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.services-card__text {
+    margin: 0 auto;
+    text-align: center;
+    width: 620px;
+    height: 406px;
+    transition: all 0.2s;
+}
+
+
+.services-card__text:hover {
+    width: 640px;
+    height: 426px;
+    background-image: url("gutter.webp");
+
+}
+
+.services-card__body {
+    display: none;
+}
+
+.services-card__body h2 {
+    font-size: 1.25rem;
+    margin: 20px 0px 10px 0px;
+    font-weight: 600;
+}
+
+.services-card__body p {
+    font-size: 1.12rem;
+    width: 370px;
+    font-weight: 400;
+    margin: 0 auto;
 }
