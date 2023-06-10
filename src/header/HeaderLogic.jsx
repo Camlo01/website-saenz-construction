@@ -8,7 +8,7 @@ window.addEventListener('scroll', function () {
     let phoneNumber = document.getElementById('phone-number')
 
     let position = window.pageYOffset;
-    let referencePoint = 90;
+    let referencePoint = 0;
 
     if (position <= referencePoint) {
         icon.style.width = '186px';
