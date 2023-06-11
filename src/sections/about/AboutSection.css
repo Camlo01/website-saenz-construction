@@ -21,3 +21,18 @@
 .section-about__body {
     max-width: 560px;
 }
+
+.section-about__body h2 {
+    font-size: 1.12rem;
+    color: var(--color-yellow);
+}
+
+.section-about__body h3 {
+    font-size: 3.12rem;
+    font-weight: 800;
+}
+
+.section-about__body p {
+    font-size: 1.12rem;
+    font-weight: 100;
+}
