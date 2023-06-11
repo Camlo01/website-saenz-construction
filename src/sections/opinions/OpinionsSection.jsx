@@ -1,5 +1,5 @@
 import "./OpinionsSection.css"
-import Button from 'bootstrap/dist/js/bootstrap.bundle';
+import 'bootstrap/dist/js/bootstrap.bundle';
 
 export default function Opinions() {
 
