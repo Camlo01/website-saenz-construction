@@ -119,28 +119,28 @@
 
 
 #card-services-roofing {
-    background-image: url("card-services-roofing.webp");
+    background-image: url("../images/card-services-roofing.webp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 #card-services-gutters {
-    background-image: url("card-services-gutter.webp");
+    background-image: url("../images/card-services-gutter.webp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 #card-services-siding {
-    background-image: url("card-services-gutter.webp");
+    background-image: url("../images/card-services-gutter.webp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 #card-services-insure {
-    background-image: url("card-services-roofing.webp");
+    background-image: url("../images/card-services-roofing.webp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
