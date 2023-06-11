@@ -1,9 +1,9 @@
 /* Navbar styles */
-.navbar {
+.section-navbar {
     position: fixed;
     background-color: transparent;
     width: 100vw;
-    padding: 0px 30px 0px 0px;
+    padding: 0px 30px 3px 0px;
     display: flex;
     /* display: none; */
     justify-content: space-between;
@@ -19,10 +19,11 @@
 .navbar__image img {
     background-color: none;
     transition: all 0.3s;
+    width: 87px;
 }
 
 .navbar__options {
-    padding: 15px;
+    padding: 0px;
 }
 
 .navbar__phone {
@@ -53,17 +54,13 @@
     color: white;
 }
 
-.navbar__nav {
-    display: flex;
-    /* margin-top: 20px; */
-}
-
-.nav-buttons {
-    transition: color 0.2s;
-}
-
 .navbar__nav ul {
     display: flex;
+    margin-bottom: 3px;
+}
+
+.nav-button-item {
+    transition: color 0.2s;
 }
 
 .navbar__nav ul li {
@@ -71,7 +68,7 @@
 }
 
 .navbar__nav ul li a {
-    padding: 12px 20px;
+    padding: 14px 20px;
     font-weight: 600;
     font-size: 1rem;
     text-decoration: none;
