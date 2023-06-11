@@ -1,6 +1,5 @@
 .section-portfolio {
-    padding: 10px;
-    margin-bottom: 100px;
+    padding: 30px 0;
 }
 
 .section-portfolio__container {
@@ -33,6 +32,7 @@
     padding: 10px 50px;
     border-radius: 25px;
     border: solid 1px rgb(175, 173, 173);
+    display: none;
 }
 
 .section-portfolio-photos {
