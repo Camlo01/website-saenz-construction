@@ -1,15 +1,26 @@
 .section-opinions {
-    height: 500px;
-    background-color: gray;
+    background-color: rgb(68, 67, 67);
     margin-bottom: 100px;
+}
+
+.section-opinion__container {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.opinions-section__card {
+    height: 540px;
+    width: 100%;
+    /* background-color: rgb(148, 147, 147); */
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 120px;
+    font-size: 1.5rem;
 }
 
-.section-opinions q {
-    font-size: 4rem;
-    padding: 1px;
-    background-color: lightgray;
-    /* background-color: red; */
+
+.opinions-section__card q {
+    color: white;
+    font-weight: 400;
 }
