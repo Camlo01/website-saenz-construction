@@ -1,4 +1,42 @@
-.section-portfolio{
-    background-color: bisque;
-    height: 300px;
+.section-portfolio {
+    padding: 10px;
+    margin-bottom: 100px;
+}
+
+.section-portfolio__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-portfolio__text {
+    width: 430px;
+    margin-right: 60px;
+}
+
+.section-portfolio__text h2 {
+    font-size: 1.12rem;
+    margin-bottom: 15px;
+    color: var(--color-yellow);
+}
+
+.section-portfolio__text h3 {
+    font-size: 2.62rem;
+    font-weight: 600;
+}
+
+.section-portfolio__text h2 {
+    font-size: 1.12rem;
+}
+
+.section-portfolio__text button {
+    padding: 10px 50px;
+    border-radius: 25px;
+    border: solid 1px rgb(175, 173, 173);
+}
+
+.section-portfolio-photos {
+    max-width: 700px;
+    max-height: 438px;
+
 }
