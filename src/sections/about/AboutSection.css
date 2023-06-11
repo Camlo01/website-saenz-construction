@@ -1,0 +1,23 @@
+.section-about {
+    padding: 80px 0;
+    background-color: var(--color-white);
+    display: flex;
+
+    justify-content: center;
+}
+
+.section-about__container {
+    display: flex;
+    max-width: 1170px;
+}
+
+.section-about__image {
+    width: 550px;
+    height: 480px;
+    background-color: gray;
+    margin-right: 35px;
+}
+
+.section-about__body {
+    max-width: 560px;
+}

@@ -4,6 +4,7 @@ import MissionPromise from './sections/mission/MissionPromiseSection'
 import Services from './sections/services/ServicesSection'
 import Opinions from './sections/opinions/OpinionsSection'
 import Benefits from './sections/benefits/BenefitsSection'
+import About from './sections/about/AboutSection'
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
       <MissionPromise />
       <Opinions />
       <Benefits />
+      <About />
     </>
   )
 }
