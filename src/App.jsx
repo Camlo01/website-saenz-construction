@@ -5,6 +5,7 @@ import Services from './sections/services/ServicesSection'
 import Opinions from './sections/opinions/OpinionsSection'
 import Benefits from './sections/benefits/BenefitsSection'
 import About from './sections/about/AboutSection'
+import Portfolio from './sections/portfolio/PortfolioSection'
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
       <Opinions />
       <Benefits />
       <About />
+      <Portfolio />
     </>
   )
 }
