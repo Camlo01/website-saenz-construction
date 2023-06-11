@@ -15,6 +15,7 @@ window.addEventListener('scroll', function () {
         icon.style.height = 'auto';
         icon.style.position = "fixed"
         navbar.style.backgroundColor = "transparent"
+        navbar.style.borderBottom = ""
         phoneNumber.style.color = "var(--color-white)"
 
         // Iterate elements over navButtons and new color
@@ -26,9 +27,10 @@ window.addEventListener('scroll', function () {
 
         icon.style.width = '87px';
         navbar.style.backgroundColor = "white"
+        navbar.style.borderBottom = "solid 1px #dbdada"
         phoneNumber.style.color = "var(--color-red)"
         for (let i = 0; i < navButtons.length; i++) {
-            navButtons[i].style.color = "//var(--color-blue-gray)"
+            navButtons[i].style.color = "var(--color-blue-gray)"
         }
     }
 });

@@ -1,0 +1,74 @@
+.section-mission {
+    background-image: url('roof.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.section-mission__layer {
+    background-color: rgba(0, 0, 0, 0.507);
+    height: 545px;
+    padding-top: 120px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.section-mission__container {
+    margin: 0 auto;
+    max-width: 1450px;
+}
+
+
+.section-mission__title {
+    max-width: 630px;
+    margin-bottom: 20px;
+}
+
+.section-mission__title h2 {
+    color: var(--color-yellow);
+    font-size: 1.12rem;
+    margin: 15px 0 20px 0;
+}
+
+.section-mission__title p {
+    color: var(--color-white);
+    font-size: 1.87rem;
+    font-weight: 600;
+    margin: 10px 0 30px 0;
+}
+
+.section-mission__body div {
+    width: 580px;
+    margin: 0 30px 0 0;
+}
+
+.section-mission__body {
+    display: flex;
+}
+
+.section-mission__body p {
+    font-weight: 100;
+}
+
+.section-mission__body p {
+    color: white;
+}
+
+.section-mission__body h3 {
+    color: var(--color-yellow);
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.mission-body__mission p {
+    margin-bottom: 10px;
+}
+
+.mission-body__text p {
+    margin-bottom: 10px;
+}
+
+.mission-body__promise p {
+    margin-bottom: 5px;
+}

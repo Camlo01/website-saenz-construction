@@ -9,6 +9,7 @@
     justify-content: space-between;
     transition: all 0.3s;
     z-index: 3;
+    background-color: red;
 }
 
 .navbar__image {
@@ -95,8 +96,6 @@ header {
     padding-top: 126px;
     /* background-color: rgb(182, 182, 182); */
     background-image: url("../roof.png");
-    background-size: 100%;
-    background-size: 100%;
     background-size: 100%;
     background-repeat: no-repeat;
     width: 100%;
