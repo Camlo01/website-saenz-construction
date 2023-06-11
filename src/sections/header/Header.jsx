@@ -7,7 +7,7 @@ export default function Header() {
     return (
         <>
             <header>
-                <section className='navbar' id='navbarElement'>
+                <section className='section-navbar' id='navbarElement'>
                     <div className='navbar__image' >
                         <img src={'website-icon-nav.png'} alt="Logo de la empresa" id='icon-navbar' />
                     </div>
@@ -16,18 +16,18 @@ export default function Header() {
                             <p id='phone-number'>(724) 554-6224</p>
                             <button>FREE QUOTE</button>
                         </div>
-                        <nav className='navbar__nav'>
+                        <div className='navbar__nav'>
                             <ul>
-                                <li><a href="" className='nav-buttons'>ROOFING</a></li>
-                                <li><a href="" className='nav-buttons'>SIDING</a></li>
-                                <li><a href="" className='nav-buttons'>GUTTERS & DOWNSPOUT</a></li>
-                                <li><a href="" className='nav-buttons'>FINANCING</a></li>
-                                <li><a href="" className='nav-buttons'>INSURE CLAIMS</a></li>
-                                <li><a href="" className='nav-buttons'>COLOR SELECTION</a></li>
-                                <li><a href="" className='nav-buttons'>GALLERY</a></li>
-                                <li><a href="" className='nav-buttons'>ABOUT</a></li>
+                                <li><a href="" className='nav-button-item'>ROOFING</a></li>
+                                <li><a href="" className='nav-button-item'>SIDING</a></li>
+                                <li><a href="" className='nav-button-item'>GUTTERS & DOWNSPOUT</a></li>
+                                <li><a href="" className='nav-button-item'>FINANCING</a></li>
+                                <li><a href="" className='nav-button-item'>INSURE CLAIMS</a></li>
+                                <li><a href="" className='nav-button-item'>COLOR SELECTION</a></li>
+                                <li><a href="" className='nav-button-item'>GALLERY</a></li>
+                                <li><a href="" className='nav-button-item'>ABOUT</a></li>
                             </ul>
-                        </nav>
+                        </div>
                     </div>
                 </section>
                 <section className='header'>
