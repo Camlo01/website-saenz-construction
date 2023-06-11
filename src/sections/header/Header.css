@@ -29,7 +29,7 @@
 .navbar__phone {
     display: flex;
     align-items: center;
-    Justify-content: end;
+    justify-content: end;
     padding: 24px 0px 15px;
 }
 
@@ -221,7 +221,7 @@ header {
     font-size: 2.62rem;
 }
 
-.header-rate-title__body {}
+/* .header-rate-title__body {} */
 
 .header-rate-title__body p {
     font-size: 1.12rem;
