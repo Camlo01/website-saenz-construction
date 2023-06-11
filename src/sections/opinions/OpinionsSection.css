@@ -1,0 +1,15 @@
+.section-opinions {
+    height: 500px;
+    background-color: gray;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-opinions q {
+    font-size: 4rem;
+    padding: 1px;
+    background-color: lightgray;
+    /* background-color: red; */
+}
