@@ -9,7 +9,7 @@
     justify-content: space-between;
     transition: all 0.3s;
     z-index: 3;
-    background-color: red;
+    border: none;
 }
 
 .navbar__image {
