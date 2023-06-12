@@ -14,7 +14,7 @@ export default function Opinions() {
                                     <q>"I had siding put up on my whole house, and the crew was very hard-working. They took great pride in their work. They were extremely responsive to inquiries and kept me in the loop with timeframes. I’ll definitely recommend this company to my friends."</q>
                                 </div>
                             </div>
-                            <div class="carousel-item">
+                            <div className="carousel-item">
                                 <div className="opinions-section__card">
                                     <q>"We had our roof replaced two weeks ago. The entire experience was professional, from Jace who quoted the job, and Manny and his team... hardworking, courteous and detail oriented. Could not be happier with the final product. The new roof, soffit, facia and gutters looks amazing"</q>
                                 </div>

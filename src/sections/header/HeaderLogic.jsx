@@ -1,121 +1,77 @@
-window.onload = function () {
+
+/**
+ * When the page finished loading
+ */
+window.onload = () => {
+    navbarColor()
+    navbarOpenMenu()
+}
+
+/** 
+ * When the screen size changes
+ */
+window.onresize = () => {
+    navbarColor()
+    navbarOpenMenu()
+}
 
 
-    // get elements to apply styles 
-    let icon = document.getElementById('icon-navbar');
-    let navbar = document.getElementById('navbarElement')
-    let navButtons = document.getElementsByClassName('nav-button-item')
-    let phoneNumber = document.getElementById('phone-number')
+window.onscroll = () => {
+    navbarColor()
+}
+
+
+/**
+ * Configraution for the navbar according the screen size
+ */
+function navbarOpenMenu() {
+
+    // Buttons for behavior of display menu
+    const buttonOpenMenu = document.getElementById("open-menu");
+    const buttonCloseMenu = document.getElementById("close-menu")
+    const navbar = document.getElementById("navbarElement")
+    // Menu for show
+    const menuNavbar = document.getElementById("menu")
+
+    if (window.matchMedia("(max-width: 1000px)").matches) {
+        buttonOpenMenu.addEventListener('click', () => {
+
+            buttonOpenMenu.style.display = "none";
+            navbar.style.backgroundColor = "white"
+
+
+            menuNavbar.style.display = "block"
+
+        })
+
+        buttonCloseMenu.addEventListener('click', () => {
+            buttonOpenMenu.style.display = "block"
+
+            navbar.style.backgroundColor = "transparent"
+            // show open button
+
+            // Hide menu
+            menuNavbar.style.display = "none"
+        })
+    }
+
+}
+
+function navbarColor() {
+
+    const navbar = document.getElementById("navbarElement")
 
     let position = window.pageYOffset;
     let referencePoint = 0;
 
     if (position == referencePoint) {
-        icon.style.width = '186px';
-        icon.style.height = 'auto';
-        icon.style.position = "fixed"
-        navbar.style.backgroundColor = "transparent"
-        navbar.style.paddingBottom = "10px"
-        navbar.style.borderBottom = ""
-        phoneNumber.style.color = "var(--color-white)"
-
-        // Iterate elements over navButtons and new color
-        for (let i = 0; i < navButtons.length; i++) {
-
-            navButtons[i].style.color = "var(--color-white)"
-
-            navButtons[i].addEventListener('mouseover', function () {
-                navButtons[i].style.color = 'black';
-            });
-
-            navButtons[i].addEventListener('mouseout', function () {
-                navButtons[i].style.color = 'white';
-            });
-
-        }
-
+        navbar.style.backgroundColor = "transparent";
     }
-
     if (position > referencePoint) {
-
-        icon.style.width = '87px';
-        navbar.style.backgroundColor = "white"
-        navbar.style.paddingBottom = "7px"
-        navbar.style.borderBottom = "solid 1px #dbdada"
-        phoneNumber.style.color = "var(--color-red)"
-        for (let i = 0; i < navButtons.length; i++) {
-            navButtons[i].style.color = "var(--color-blue-gray)"
-
-            navButtons[i].addEventListener('mouseover', function () {
-                navButtons[i].style.color = 'gray';
-            });
-
-            navButtons[i].addEventListener('mouseout', function () {
-                navButtons[i].style.color = 'black';
-            });
-
-        }
+        navbar.style.backgroundColor = "white";
     }
-
-    // Change the styles to the navbar when the user scrolls a bit
-    window.addEventListener('scroll', function () {
-
-
-        // get elements to apply styles 
-        let icon = document.getElementById('icon-navbar');
-        let navbar = document.getElementById('navbarElement')
-        let navButtons = document.getElementsByClassName('nav-button-item')
-        let phoneNumber = document.getElementById('phone-number')
-
-        let position = window.pageYOffset;
-        let referencePoint = 0;
-
-        if (position == referencePoint) {
-            icon.style.width = '186px';
-            icon.style.height = 'auto';
-            icon.style.position = "fixed"
-            navbar.style.backgroundColor = "transparent"
-            navbar.style.paddingBottom = "10px"
-            navbar.style.borderBottom = ""
-            phoneNumber.style.color = "var(--color-white)"
-
-            // Iterate elements over navButtons and new color
-            for (let i = 0; i < navButtons.length; i++) {
-
-                navButtons[i].style.color = "var(--color-white)"
-
-                navButtons[i].addEventListener('mouseover', function () {
-                    navButtons[i].style.color = 'black';
-                });
-
-                navButtons[i].addEventListener('mouseout', function () {
-                    navButtons[i].style.color = 'white';
-                });
-
-            }
-
-        }
-
-        if (position > referencePoint) {
-
-            icon.style.width = '87px';
-            navbar.style.backgroundColor = "white"
-            navbar.style.paddingBottom = "7px"
-            navbar.style.borderBottom = "solid 1px #dbdada"
-            phoneNumber.style.color = "var(--color-red)"
-            for (let i = 0; i < navButtons.length; i++) {
-                navButtons[i].style.color = "var(--color-blue-gray)"
-
-                navButtons[i].addEventListener('mouseover', function () {
-                    navButtons[i].style.color = 'gray';
-                });
-
-                navButtons[i].addEventListener('mouseout', function () {
-                    navButtons[i].style.color = 'black';
-                });
-
-            }
-        }
-    });
 
 }
+
+
+

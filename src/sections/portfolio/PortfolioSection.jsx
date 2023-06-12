@@ -1,5 +1,5 @@
 import './PortfolioSection.css'
-import 'bootstrap/dist/js/bootstrap.bundle';
+// import 'bootstrap/dist/js/bootstrap.bundle';
 
 export default function Portfolio() {
     return (
@@ -18,8 +18,8 @@ export default function Portfolio() {
                     <div className='section-portfolio-photos'>
 
                         <div id="carouselExampleIndicators" className="carousel slide">
-                            <div class="carousel-indicators">
-                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <div className="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
                                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
                                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
                             </div>
@@ -27,10 +27,10 @@ export default function Portfolio() {
                                 <div className="carousel-item active">
                                     <img src="images/roof-gallery-1.jpg" className="d-block w-85" alt="..." />
                                 </div>
-                                <div class="carousel-item">
+                                <div className="carousel-item">
                                     <img src="images/roof-gallery-1.jpg" className="d-block w-85" alt="..." />
                                 </div>
-                                <div class="carousel-item">
+                                <div className="carousel-item">
                                     <img src="images/roof-gallery-1.jpg" className="d-block w-85" alt="..." />
                                 </div>
                             </div>
@@ -40,7 +40,7 @@ export default function Portfolio() {
                             </button>
                             <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
                                 <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span clclassNameass="visually-hidden">Next</span>
+                                <span className="visually-hidden">Next</span>
                             </button>
                         </div>
                     </div>

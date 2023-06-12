@@ -8,11 +8,11 @@ export default function Footer() {
                 <div className="section-footer__container">
 
                     <div className='section-footer__locations' id='section-footer__locations'>
-                        <img src="../images/website-icon-nav.png" alt="" />
-                        <p className='footer-locations__title'>Saenz Construction | Pitsburg</p>
-                        <p>5425 Enterprise Blvd</p>
-                        <p>Bethel Park, PA 15102</p>
-                        <p>(724) 554-6224</p>
+                        <img src="../icons/icon-saenz.jpeg" alt="" />
+                        <p className='footer-locations__title'>Saenz Construction Pittsburgh pensilvania</p>
+                        <p>4708 Theodore </p>
+                        <p>Street 15120</p>
+                        <p>(412) 721-3612</p>
                     </div>
 
                     <div className='section-footer__column'>

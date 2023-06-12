@@ -4,31 +4,43 @@ import './HeaderLogic'
 
 export default function Header() {
 
+
     return (
         <>
             <header>
                 <section className='section-navbar' id='navbarElement'>
+
                     <div className='navbar__image' >
-                        <img src={'../images/website-icon-nav.png'} alt="Logo de la empresa" id='icon-navbar' />
+                        <img className='logo' src={'../images/website-icon-nav.png'} alt="Logo de la empresa" id='icon-navbar' />
                     </div>
-                    <div className='navbar__options'>
-                        <div className='navbar__phone'>
+
+                    <div className='section-navbar-elements'>
+
+                        <div className='navbar__buttons'>
                             <p id='phone-number'>(724) 554-6224</p>
-                            <button>FREE QUOTE</button>
+                            <button id='call-button'>Call</button>
+                            <button id='free-quote-button'>FREE QUOTE</button>
                         </div>
-                        <div className='navbar__nav'>
-                            <ul>
-                                <li><a href="" className='nav-button-item'>ROOFING</a></li>
-                                <li><a href="" className='nav-button-item'>SIDING</a></li>
-                                <li><a href="" className='nav-button-item'>GUTTERS & DOWNSPOUT</a></li>
-                                <li><a href="" className='nav-button-item'>FINANCING</a></li>
-                                <li><a href="" className='nav-button-item'>INSURE CLAIMS</a></li>
-                                <li><a href="" className='nav-button-item'>COLOR SELECTION</a></li>
-                                <li><a href="" className='nav-button-item'>GALLERY</a></li>
-                                <li><a href="" className='nav-button-item'>ABOUT</a></li>
-                            </ul>
+
+                        <div className='navbar-menu'>
+                            <button id='open-menu'>Menú</button>
+                            <div className='navbar__menu' id='menu'>
+                                <button id='close-menu'>cerrar</button>
+                                <ul className='navbar__list'>
+                                    <li><a href="" className='nav-button-item'>ROOFING</a></li>
+                                    <li><a href="" className='nav-button-item'>SIDING</a></li>
+                                    <li><a href="" className='nav-button-item'>INSURE CLAIMS</a></li>
+                                    <li><a href="" className='nav-button-item'>COLOR SELECTION</a></li>
+                                    <li><a href="" className='nav-button-item'>GALLERY</a></li>
+                                    <li><a href="" className='nav-button-item'>ABOUT</a></li>
+                                </ul>
+                            </div>
                         </div>
+
                     </div>
+
+
+
                 </section>
                 <section className='header'>
                     <div className='header__items-container'>
