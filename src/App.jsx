@@ -7,6 +7,7 @@ import Benefits from './sections/benefits/BenefitsSection'
 import About from './sections/about/AboutSection'
 import Portfolio from './sections/portfolio/PortfolioSection'
 import Schedule from './sections/schedule/ScheduleSection'
+import Footer from './sections/footer/FooterSection'
 
 function App() {
 
@@ -19,7 +20,8 @@ function App() {
       <Benefits />
       <About />
       <Portfolio />
-      <Schedule/>
+      <Schedule />
+      <Footer />
     </>
   )
 }
