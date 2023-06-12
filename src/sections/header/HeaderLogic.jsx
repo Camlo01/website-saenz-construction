@@ -118,4 +118,30 @@ window.onload = function () {
         }
     });
 
+    const buttonOpenMenu = document.getElementById("open");
+    const buttonCall = document.getElementById('call-button')
+    const buttonClose = document.getElementById('close')
+    const buttonNavbar = document.getElementById('navbar')
+    const sectionNavbar = document.getElementById('navbarElement')
+
+    buttonOpenMenu.addEventListener('click', function () {
+        buttonNavbar.style.opacity = 1;
+        buttonNavbar.style.visibility = "visible";
+        buttonCall.style.display = "none";
+        buttonOpenMenu.style.display = "none";
+        buttonClose.style.display = "block";
+        sectionNavbar.style.backgroundColor = "white";
+    })
+
+    buttonClose.addEventListener('click', function () { 
+        
+        buttonNavbar.style.opacity = 0;
+        buttonNavbar.style.visibility = "hidden";
+        buttonCall.style.display = "block";
+        buttonOpenMenu.style.display = "block";
+        buttonClose.style.display = "none";
+        sectionNavbar.style.backgroundColor = "transparent";
+
+    })
 }
+

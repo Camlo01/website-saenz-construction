@@ -9,24 +9,33 @@ export default function Header() {
             <header>
                 <section className='section-navbar' id='navbarElement'>
                     <div className='navbar__image' >
-                        <img src={'../images/website-icon-nav.png'} alt="Logo de la empresa" id='icon-navbar' />
+                        <img className='logo' src={'../images/website-icon-nav.png'} alt="Logo de la empresa" id='icon-navbar' />
                     </div>
-                    <div className='navbar__options'>
-                        <div className='navbar__phone'>
-                            <p id='phone-number'>(724) 554-6224</p>
-                            <button>FREE QUOTE</button>
-                        </div>
-                        <div className='navbar__nav'>
-                            <ul>
-                                <li><a href="" className='nav-button-item'>ROOFING</a></li>
-                                <li><a href="" className='nav-button-item'>SIDING</a></li>
-                                <li><a href="" className='nav-button-item'>GUTTERS & DOWNSPOUT</a></li>
-                                <li><a href="" className='nav-button-item'>FINANCING</a></li>
-                                <li><a href="" className='nav-button-item'>INSURE CLAIMS</a></li>
-                                <li><a href="" className='nav-button-item'>COLOR SELECTION</a></li>
-                                <li><a href="" className='nav-button-item'>GALLERY</a></li>
-                                <li><a href="" className='nav-button-item'>ABOUT</a></li>
-                            </ul>
+                    <div className='section-navbar-buttons'>
+
+                        <div className='navbar__options'>
+
+                            <div className='navbar-options__buttons'>
+
+                                <div className='navbar__phone'>
+                                    <p id='phone-number'>(724) 554-6224</p>
+                                    <button id='call-button'>Call</button>
+                                    <button id='free-quote-button'>FREE QUOTE</button>
+                                </div>
+
+                                <button className='open-menu' id='open'>Abrir</button>
+                            </div>
+                            <nav className='navbar__nav' id='navbar'>
+                                <button className='close-menu' id='close'>Close</button>
+                                <ul className='navbar__list'>
+                                    <li><a href="" className='nav-button-item'>ROOFING</a></li>
+                                    <li><a href="" className='nav-button-item'>SIDING</a></li>
+                                    <li><a href="" className='nav-button-item'>INSURE CLAIMS</a></li>
+                                    <li><a href="" className='nav-button-item'>COLOR SELECTION</a></li>
+                                    <li><a href="" className='nav-button-item'>GALLERY</a></li>
+                                    <li><a href="" className='nav-button-item'>ABOUT</a></li>
+                                </ul>
+                            </nav>
                         </div>
                     </div>
                 </section>
