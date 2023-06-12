@@ -1,5 +1,51 @@
 .section-schedule {
     height: 370px;
-    background-color: red;
-    margin-bottom: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-schedule__layer {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.712);
+}
+
+.section-schedule__body {
+    display: flex;
+    align-items: center;
+    margin-right: 70px;
+}
+
+.section-schedule__body button {
+    background-color: transparent;
+    padding: 10px 60px;
+    border-radius: 25px;
+    font-size: 0.87rem;
+    border: solid 0.5 white;
+}
+
+
+.section-schedule__body button a {
+    color: white;
+    text-decoration: none;
+}
+
+.section-schedule__text {
+    width: 750px;
+    height: 90px;
+    margin-right: 40px;
+    color: var(--color-white);
+}
+
+.section-schedule__text h2 {
+    font-size: 1.87rem;
+    font-weight: 800;
+}
+
+.section-schedule__text p {
+    font-size: 1.12rem;
+    font-weight: 100;
 }
