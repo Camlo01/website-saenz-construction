@@ -18,9 +18,9 @@ function App() {
       <MissionPromise />
       <Opinions />
       <Benefits />
-      <About />
       <Portfolio />
       <Schedule />
+      <About />
       <Footer />
     </>
   )
