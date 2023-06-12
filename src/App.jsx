@@ -6,6 +6,7 @@ import Opinions from './sections/opinions/OpinionsSection'
 import Benefits from './sections/benefits/BenefitsSection'
 import About from './sections/about/AboutSection'
 import Portfolio from './sections/portfolio/PortfolioSection'
+import Schedule from './sections/schedule/ScheduleSection'
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
       <Benefits />
       <About />
       <Portfolio />
+      <Schedule/>
     </>
   )
 }
