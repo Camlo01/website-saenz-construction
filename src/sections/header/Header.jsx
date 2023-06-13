@@ -43,8 +43,11 @@ export default function Header() {
 
                 </section>
                 <section className='header'>
+
                     <div className='header__items-container'>
+
                         <div className='header__title'>
+
                             <h1>Your Trusted Pittsburgh Roofing Company</h1>
                             <p>Our experienced roofing and exterior renovation contractors are experts in roof replacement, residential siding, new gutters and more!</p>
                             <div className='header__google-reviews'>
@@ -54,23 +57,35 @@ export default function Header() {
                         <div className='header__form'>
                         </div>
                     </div>
+
                     <div className='header-rate'>
+
                         <div className='header-rate__calification'>
+
                             <div className='rate-calification__card'><img src="" alt="" /><div className='calification-card__text'><h2>4.9</h2><p>OUT OF 493 REVIEWS</p></div></div>
                             <div className='rate-calification__card'><img src="" alt="" /><div className='calification-card__text'><h2>4.9</h2><p>OUT OF 99 REVIEWS</p></div></div>
                             <div className='rate-calification__card'><img src="" alt="" /><div className='calification-card__text'><h2>A+</h2><p>OUT OF 17 REVIEWS</p></div></div>
                             <div className='rate-calification__card'><img src="" alt="" /><div className='calification-card__text'><h2>4.9</h2><p>OUT OF 109 REVIEWS</p></div></div>
                         </div>
+
                         <div className='header-rate-title'>
-                            <div className='header-rate-title__title'>
-                                <h3>Buccos Roofing</h3>
-                                <h2>Pittsburgh Roofers</h2>
-                            </div>
-                            <div className='header-rate-title__body'>
-                                <p>If you want to boost the curb appeal, energy efficiency, and longevity of your Pittsburgh home, you don’t have to look far to find a roofing and exterior renovation company you can trust. Local residents have been relying on Buccos Roofing since 2012—because they know we always put our customers first! Therefore, you can trust us to deliver exceptional results no matter your taste, budget, or needs.</p>
+
+                            <div className='rate-title__container'>
+
+                                <div className='header-rate-title__title'>
+                                    <h3>Buccos Roofing</h3>
+                                    <h2>Pittsburgh Roofers</h2>
+                                </div>
+
+                                <div className='header-rate-title__body'>
+                                    <p>If you want to boost the curb appeal, energy efficiency, and longevity of your Pittsburgh home, you don’t have to look far to find a roofing and exterior renovation company you can trust. Local residents have been relying on Buccos Roofing since 2012—because they know we always put our customers first! Therefore, you can trust us to deliver exceptional results no matter your taste, budget, or needs.</p>
+                                </div>
+
                             </div>
                         </div>
+
                     </div>
+
                 </section>
             </header>
         </>
