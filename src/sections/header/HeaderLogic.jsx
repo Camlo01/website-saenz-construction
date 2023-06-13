@@ -17,6 +17,7 @@ window.onload = () => {
 window.onresize = () => {
     navbarColor()
     navbarOpenMenu()
+    resetStylesWhenResize()
 }
 
 
@@ -50,11 +51,13 @@ function navbarOpenMenu() {
             buttonOpenMenu.style.display = "none";
             navbar.style.backgroundColor = "white"
             menuNavbar.style.display = "block"
+            buttonCloseMenu.style.display = "block"
 
         })
 
         buttonCloseMenu.addEventListener('click', () => {
             buttonOpenMenu.style.display = "block"
+            navbar.style.display = "flex"
 
             if (position == referencePoint) {
                 navbar.style.backgroundColor = "transparent"
@@ -80,6 +83,13 @@ function navbarColor() {
     if (position > referencePoint) {
         navbar.style.backgroundColor = "white";
     }
+
+}
+
+/**
+ * Function -> reset the styles to the elemets when resize the screen
+ */
+function resetStylesWhenResize() {
 
 }
 
