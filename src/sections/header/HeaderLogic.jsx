@@ -1,4 +1,8 @@
 
+// Global variables to know the position of scroll
+let position;
+let referencePoint;
+
 /**
  * When the page finished loading
  */
@@ -17,7 +21,13 @@ window.onresize = () => {
 
 
 window.onscroll = () => {
+
+    // Update values for global varialbes of screen position
+    position = window.pageYOffset;
+    referencePoint = 0;;
+
     navbarColor()
+
 }
 
 
@@ -33,13 +43,12 @@ function navbarOpenMenu() {
     // Menu for show
     const menuNavbar = document.getElementById("menu")
 
+
     if (window.matchMedia("(max-width: 1000px)").matches) {
         buttonOpenMenu.addEventListener('click', () => {
 
             buttonOpenMenu.style.display = "none";
             navbar.style.backgroundColor = "white"
-
-
             menuNavbar.style.display = "block"
 
         })
@@ -47,9 +56,13 @@ function navbarOpenMenu() {
         buttonCloseMenu.addEventListener('click', () => {
             buttonOpenMenu.style.display = "block"
 
-            navbar.style.backgroundColor = "transparent"
-            // show open button
-
+            if (position == referencePoint) {
+                navbar.style.backgroundColor = "transparent"
+                // show open button
+            }
+            if (position > referencePoint) {
+                navbar.style.backgroundColor = "white"
+            }
             // Hide menu
             menuNavbar.style.display = "none"
         })
@@ -60,9 +73,6 @@ function navbarOpenMenu() {
 function navbarColor() {
 
     const navbar = document.getElementById("navbarElement")
-
-    let position = window.pageYOffset;
-    let referencePoint = 0;
 
     if (position == referencePoint) {
         navbar.style.backgroundColor = "transparent";
