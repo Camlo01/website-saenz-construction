@@ -5,6 +5,10 @@ import './HeaderLogic'
 export default function Header() {
 
 
+    function handleOpenMenu() {
+        // here should be behavior to manage the logic of open menu button
+    }
+
     return (
         <>
             <header>
@@ -23,7 +27,7 @@ export default function Header() {
                         </div>
 
                         <div className='navbar-menu'>
-                            <button id='open-menu'>|||</button>
+                            <button onClick={handleOpenMenu} id='open-menu'>|||</button>
                             <div className='navbar__menu' id='menu'>
                                 <button id='close-menu'>X</button>
                                 <ul className='navbar__list'>
