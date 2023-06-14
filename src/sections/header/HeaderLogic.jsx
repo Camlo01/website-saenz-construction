@@ -52,6 +52,7 @@ function navbarOpenMenu() {
             navbar.style.backgroundColor = "white"
             menuNavbar.style.display = "block"
             buttonCloseMenu.style.display = "block"
+            buttonCloseMenu.style.margin = "25px 30px 25px auto"
 
         })
 

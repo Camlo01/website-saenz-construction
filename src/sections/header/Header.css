@@ -5,7 +5,7 @@
     background-color: transparent;
     padding: 15px 15px 0rem;
     width: 100%;
-    min-height: 125px;
+    min-height: 135px;
     transition: all 0.2s;
     z-index: 3;
 }
@@ -22,17 +22,17 @@
 
 
 .navbar__buttons #call-button,
-#close-menu,#open-menu  {
+#close-menu,
+#open-menu {
     display: none;
 }
 
 
 /*  */
-   
-.navbar__image img {
-    width: 100px;
 
-    /* baheader__titleckground-color: red; */
+.navbar__image img {
+    width: 210px;
+    padding-left: 10px;
 }
 
 #navbarElement {
@@ -43,10 +43,12 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    transition: all 0.1s;
+    transition-delay: all 1s
 }
 
 #phone-number {
-    background-color: green;
+    /* background-color: green; */
     display: flex;
     font-size: 1.5rem;
     align-items: center;
@@ -64,19 +66,19 @@
 
 .navbar__list {
     display: flex;
-    background-color: blue;
+    /* background-color: blue; */
     margin-bottom: 0px;
 }
 
 .navbar__buttons {
-    background-color: red;
     display: flex;
     align-items: center;
     justify-content: end;
     height: 65px;
-    /* width: 100%; */
+    transition: all 0.1s;
 }
-.navbar__list{
+
+.navbar__list {
     display: flex;
     flex-direction: column;
 }
@@ -89,7 +91,6 @@
 .navbar__list li a {
     text-decoration: none;
     padding: 15px 15px;
-    background-color: red;
 }
 
 
@@ -130,6 +131,7 @@
     height: 138px;
     width: 210px;
     background-color: rgb(48, 45, 45);
+    display: none;
 }
 
 .header__form {
@@ -148,7 +150,6 @@
     width: 100%;
     padding-top: 20px;
     background-color: #262626;
-    color: red;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -181,7 +182,6 @@
 }
 
 .rate-calification__card img {
-    background-color: red;
     min-width: 55px;
     height: 55px;
     margin-right: 12px;
@@ -328,16 +328,19 @@
         margin: 15px auto;
     }
 
-    .navbar__menu{
+    .navbar__menu {
         display: flex;
     }
-    .navbar__list{
+
+    .navbar__list {
         display: flex;
         flex-direction: row;
     }
 
-    #open-menu, #close-menu{
+    #open-menu,
+    #close-menu {
         display: none;
+        margin: 0 auto;
     }
 
 }
@@ -350,13 +353,14 @@
 
     .navbar__image img {
         position: absolute;
-        width: 65px;
+        padding-top: 18px;
+        width: 140px;
     }
 
     .section-navbar-elements {
         display: flex;
         width: 100%;
-        background-color: green;
+        /* background-color: green; */
         align-items: flex-end;
         justify-content: end;
     }
@@ -369,6 +373,8 @@
 
     .navbar-menu {
         display: flex;
+        justify-content: center;
+        margin-bottom: 15px;
         align-items: center;
         height: 100%;
         text-align: end;
@@ -377,12 +383,14 @@
     .navbar__menu {
         padding: 0 0 0 0;
         flex-direction: column;
-        justify-content: center;
+        justify-content: end;
         display: none;
     }
 
     .navbar__menu #close-menu {
+        margin-left: 50%;
         margin-top: 10px;
+        width: 50px;
     }
 
     .navbar__menu ul li {
@@ -395,7 +403,7 @@
     .navbar__menu ul li a {
         text-decoration: none;
         width: 100px;
-        padding: 15px 60px;
+        padding: 15px 40px 15px 30px;
         white-space: nowrap;
         font-size: 1.12rem;
     }
@@ -409,7 +417,7 @@
 
     #open-menu {
         display: block;
+        width: 50px;
     }
 
 }
-

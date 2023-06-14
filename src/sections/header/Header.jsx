@@ -11,7 +11,7 @@ export default function Header() {
                 <section className='section-navbar' id='navbarElement'>
 
                     <div className='navbar__image' >
-                        <img className='logo' src={'../images/website-icon-nav.png'} alt="Logo de la empresa" id='icon-navbar' />
+                        <img className='logo' src={'../icons/saenz-house-icon.png'} alt="Logo de la empresa" id='icon-navbar' />
                     </div>
 
                     <div className='section-navbar-elements'>
@@ -23,9 +23,9 @@ export default function Header() {
                         </div>
 
                         <div className='navbar-menu'>
-                            <button id='open-menu'>Menú</button>
+                            <button id='open-menu'>|||</button>
                             <div className='navbar__menu' id='menu'>
-                                <button id='close-menu'>cerrar</button>
+                                <button id='close-menu'>X</button>
                                 <ul className='navbar__list'>
                                     <li><a href="" className='nav-button-item'>ROOFING</a></li>
                                     <li><a href="" className='nav-button-item'>SIDING</a></li>
