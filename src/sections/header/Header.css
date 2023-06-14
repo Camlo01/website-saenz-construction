@@ -157,7 +157,6 @@
     background-color: white;
 }
 
-
 .header-rate__calification {
     height: auto;
     display: flex;
@@ -235,14 +234,13 @@
 
 }
 
-@media (min-width: 940px) {
+@media (min-width: 840px) {
     .header-rate__calification {
         height: auto;
         display: flex;
         flex-direction: row;
         margin: 0 50px;
         max-width: none;
-        background-color: aqua;
         /* margin-top: -85px; */
     }
 
