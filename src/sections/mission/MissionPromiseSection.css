@@ -1,13 +1,13 @@
 .section-mission {
     background-image: url('../images/roof.png');
-    background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
-    background-color: aqua;
+    background-size: cover;
+    padding: 30px 0;
 }
 
 .section-mission__layer {
-    background-color: red;
+    background-color: rgba(0, 0, 0, 0.363);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -19,10 +19,15 @@
     margin-bottom: 20px;
 }
 
+.section-mission__body {
+    color: white;
+}
+
 .section-mission__title h2 {
     color: var(--color-yellow);
     font-size: 1rem;
     margin: 15px 0 20px 0;
+    font-weight: 800;
 }
 
 .section-mission__title p {
@@ -32,13 +37,10 @@
     margin: 10px 0 30px 0;
 }
 
-.section-mission__body {
-    color: white;
-}
-
 .section-mission__body h3 {
     color: var(--color-yellow);
     font-size: 1.2rem;
+    font-weight: 700;
 }
 
 .section-mission__body p {
@@ -70,7 +72,6 @@
     }
 
     .section-mission__title h2 {
-        color: var(--color-yellow);
         font-size: 1.12rem;
         margin: 15px 0 20px 0;
     }
@@ -83,10 +84,8 @@
     }
 
     .section-mission__body div {
-        /* max-width: 450px; */
         width: 100%;
         margin: 0 30px 0 0;
-        /* background-color: red; */
     }
 
     .section-mission__body {
@@ -112,11 +111,8 @@
         margin-bottom: 10px;
     }
 
-    /* .mission-body__promise {} */
-
     .mission-body__promise p {
         margin-bottom: 5px;
     }
-
 
 }
