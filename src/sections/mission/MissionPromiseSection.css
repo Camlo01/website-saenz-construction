@@ -6,7 +6,7 @@
     background-color: aqua;
 }
 
-.section-mission__layer{
+.section-mission__layer {
     background-color: red;
     display: flex;
     align-items: center;
@@ -32,14 +32,15 @@
     margin: 10px 0 30px 0;
 }
 
-.section-mission__body{
+.section-mission__body {
     color: white;
 }
 
-.section-mission__body h3{
+.section-mission__body h3 {
     color: var(--color-yellow);
     font-size: 1.2rem;
 }
+
 .section-mission__body p {
     font-size: 1rem;
 }
@@ -58,7 +59,7 @@
 
     .section-mission__container {
         margin: 0 auto;
-        padding:  0 30px;
+        padding: 0 30px;
         max-width: 1450px;
     }
 
@@ -111,7 +112,7 @@
         margin-bottom: 10px;
     }
 
-    .mission-body__promise {}
+    /* .mission-body__promise {} */
 
     .mission-body__promise p {
         margin-bottom: 5px;
