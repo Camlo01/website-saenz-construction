@@ -13,6 +13,7 @@
     height: 550px;
     display: flex;
     justify-content: center;
+    background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
 }
 
 .section-benefits__text {
@@ -41,16 +42,15 @@
     text-align: center;
 }
 
-
 .benefits-card__container {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
 }
 
 .benefits-card__body {
-    padding-bottom: 90px;
+    padding: 0 0 70px;
+    max-width: 420px;
 }
 
 .benefits-card__body h3 {
