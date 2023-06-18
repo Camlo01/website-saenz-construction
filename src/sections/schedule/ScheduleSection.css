@@ -6,7 +6,6 @@
     /* here should be the image */
 }
 
-
 .section-schedule__layer {
     display: flex;
     align-items: center;
@@ -14,6 +13,10 @@
     background-color: rgba(0, 0, 0, 0.712);
     width: 100%;
     height: 100%;
+}
+
+.section-schedule__body {
+    padding: 30px;
 }
 
 .section-schedule__body button {
