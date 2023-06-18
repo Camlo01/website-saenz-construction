@@ -10,21 +10,22 @@
 
 .section-portfolio__text {
     padding: 0 15px 20px;
+    max-width: 550px;
 }
 
 .section-portfolio__text h2 {
-    font-size: .9rem;
+    font-size: 1.12rem;
     margin-bottom: 15px;
     color: var(--color-yellow);
 }
 
 .section-portfolio__text h3 {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     font-weight: 800;
 }
 
-.section-portfolio__text h2 {
-    font-size: 1rem;
+.section-portfolio__text p {
+    font-size: 1.12rem;
 }
 
 .section-portfolio-photos {
@@ -58,7 +59,7 @@
     }
 
     .section-portfolio__text {
-        width: 430px;
+        width: 505px;
         margin-right: 60px;
     }
 
@@ -70,7 +71,7 @@
 
     .section-portfolio__text h3 {
         font-size: 2.62rem;
-        font-weight: 600;
+        font-weight: 800;
     }
 
     .section-portfolio__text h2 {
@@ -85,14 +86,14 @@
     }
 
     .section-portfolio-photos {
-        max-width: 700px;
-        max-height: 438px;
+        max-width: 660px;
+        max-height: 498px;
         margin: 0;
     }
 
     .section-portfolio-photos img {
         margin: 0 auto;
-        /* width: 100%; */
+        width: 100%;
         height: 380px;
     }
 
