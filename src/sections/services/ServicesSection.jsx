@@ -14,7 +14,7 @@ export default function Services() {
                 <div className="section-services__text">
                     <p id="our-services">OUR SERVICES</p>
                     <h2>Roofing, Siding, Gutters and More</h2>
-                    <p>Whether you are restoring a fixer-upper or renovating your forever home, Buccos Roofing can help you achieve all your goals. Our expert roofing and exterior remodeling company has the knowledge, skills, and resources to handle even the most challenging roofing and siding needs! We can beautify your property with a stunning roof replacement, customized siding, or seamless gutters! Additionally, our team of experts is happy to help guide you through the storm damage restoration process. Your home renovations are in excellent hands with our local family business!</p>
+                    <p>Whether you are restoring a fixer-upper or renovating your forever home, Saenz Construction can help you achieve all your goals. Our expert roofing and exterior remodeling company has the knowledge, skills, and resources to handle even the most challenging roofing and siding needs! We can beautify your property with a stunning roof replacement, customized siding, or seamless gutters! Additionally, our team of experts is happy to help guide you through the storm damage restoration process. Your home renovations are in excellent hands with our local family business!</p>
                 </div>
 
                 <div className="section-services__card">
@@ -77,7 +77,7 @@ export default function Services() {
                                         <button>INSURE CLAIMS</button>
                                         <div className="services-card__body">
                                             <h2>Storm Damage Restoration </h2>
-                                            <p>You’ve already survived the stress of wind, hail, or storm damage, and you shouldn’t have to face yet another stressful battle to for your roof replacement or new siding. That’s what we believe at Buccos Roofing, and it’s why we offer courteous, professional care to walk you through every step of the insurance claims process.</p>
+                                            <p>You’ve already survived the stress of wind, hail, or storm damage, and you shouldn’t have to face yet another stressful battle to for your roof replacement or new siding. That’s what we believe at Saenz Construction, and it’s why we offer courteous, professional care to walk you through every step of the insurance claims process.</p>
                                             <div className="services-card-link"><a href="#">LEARN MORE</a></div>
                                         </div>
                                     </div>
