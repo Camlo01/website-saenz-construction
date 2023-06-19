@@ -83,31 +83,58 @@ function navbarColor() {
     const ligthGray = "var(--color-ligth-gray)"
 
     const navbar = document.getElementById("navbarElement")
+    const icon = document.getElementById("icon-navbar")
     const phoneNumber = document.getElementById("phone-number")
     const navButtons = document.getElementsByClassName("nav-button-item")
 
-    if (position == referencePoint) {
+    // If the view is on the top of the window
+    if (position <= referencePoint) {
+
         navbar.style.backgroundColor = "transparent";
         phoneNumber.style.color = white
+        icon.style.position = "absolute";
 
-        Array.from(navButtons).forEach(function (navItem) {
-            navItem.style.color = white
+        // Style only for big screens
+        if (window.matchMedia("(min-width: 1000px)").matches) {
+            icon.style.width = "340px";
+        }
 
-            navItem.addEventListener("mouseover", function () {
-                navItem.style.color = blue;
+        // 
+        if (window.matchMedia("(min-width: 1000px)").matches) {
+            Array.from(navButtons).forEach(function (navItem) {
+                navItem.style.color = white
+
+                navItem.addEventListener("mouseover", function () {
+                    navItem.style.color = blue;
+                });
+
+                navItem.addEventListener("mouseout", function () {
+                    navItem.style.color = white;
+                });
+
             });
+        } else {
+            Array.from(navButtons).forEach(function (navItem) {
+                navItem.style.color = ligthGray
 
-            navItem.addEventListener("mouseout", function () {
-                navItem.style.color = white;
+                navItem.addEventListener("mouseover", function () {
+                    navItem.style.color = blue;
+                });
+
+                navItem.addEventListener("mouseout", function () {
+                    navItem.style.color = white;
+                });
+
             });
-
-        });
+        }
 
     }
     if (position > referencePoint) {
         navbar.style.backgroundColor = white;
         phoneNumber.style.color = red
-
+        if (window.matchMedia("(min-width: 1000px)").matches) {
+            icon.style.width = "210px";
+        }
         Array.from(navButtons).forEach(function (navItem) {
             navItem.style.color = ligthGray
 
@@ -130,6 +157,3 @@ function navbarColor() {
 function resetStylesWhenResize() {
 
 }
-
-
-
