@@ -17,7 +17,7 @@ window.onload = () => {
 window.onresize = () => {
     navbarColor()
     navbarOpenMenu()
-    resetStylesWhenResize()
+    // resetStylesWhenResize() //Method commented because it needs to be improved
 }
 
 
@@ -26,16 +26,14 @@ window.onscroll = () => {
     // Update values for global varialbes of screen position
     position = window.pageYOffset;
     referencePoint = 0;;
-
     navbarColor()
-
 }
 
 
 /**
  * Configraution for the navbar according the screen size
  */
-function navbarOpenMenu() {
+export function navbarOpenMenu() {
 
     // Buttons for behavior of display menu
     const buttonOpenMenu = document.getElementById("open-menu");
@@ -49,7 +47,6 @@ function navbarOpenMenu() {
         buttonOpenMenu.addEventListener('click', () => {
 
             buttonOpenMenu.style.display = "none";
-            navbar.style.backgroundColor = "white"
             menuNavbar.style.display = "block"
             buttonCloseMenu.style.display = "block"
             buttonCloseMenu.style.margin = "25px 30px 25px auto"
@@ -74,12 +71,11 @@ function navbarOpenMenu() {
 
 }
 
-function navbarColor() {
+export function navbarColor() {
 
     const white = "#fff"
     const red = "var(--color-red)"
     const blue = "var(--color-blue-king)"
-    const gray = "var(--color-blue-gray)"
     const ligthGray = "var(--color-ligth-gray)"
 
     const navbar = document.getElementById("navbarElement")
@@ -87,12 +83,20 @@ function navbarColor() {
     const phoneNumber = document.getElementById("phone-number")
     const navButtons = document.getElementsByClassName("nav-button-item")
 
-    // If the view is on the top of the window
-    if (position <= referencePoint) {
+    // Validate the screen position
+    if (position == referencePoint || position <= referencePoint) {
 
-        navbar.style.backgroundColor = "transparent";
-        phoneNumber.style.color = white
-        icon.style.position = "absolute";
+        const closeMenuButton = document.getElementById('close-menu');
+        const styleToValidate = window.getComputedStyle(closeMenuButton).getPropertyValue('display');
+        const isMenuOpen = (styleToValidate == 'block')
+
+        //if the menu is open, cannot apply styles when is on the top of the window
+        if (!isMenuOpen) {
+            navbar.style.backgroundColor = "transparent";
+            phoneNumber.style.color = white
+            icon.style.position = "absolute";
+
+        }
 
         // Style only for big screens
         if (window.matchMedia("(min-width: 1000px)").matches) {
@@ -113,6 +117,7 @@ function navbarColor() {
                 });
 
             });
+
         } else {
             Array.from(navButtons).forEach(function (navItem) {
                 navItem.style.color = ligthGray
@@ -122,13 +127,15 @@ function navbarColor() {
                 });
 
                 navItem.addEventListener("mouseout", function () {
-                    navItem.style.color = white;
+                    navItem.style.color = ligthGray;
                 });
 
             });
         }
 
     }
+
+    // Validate the screen position
     if (position > referencePoint) {
         navbar.style.backgroundColor = white;
         phoneNumber.style.color = red
@@ -155,5 +162,24 @@ function navbarColor() {
  * Function -> reset the styles to the elemets when resize the screen
  */
 function resetStylesWhenResize() {
+    const openMenuButton = document.getElementById("open-menu");
+    const closeMenuButton = document.getElementById("close-menu");
+    const menu = document.getElementById('menu');
+
+    // Big screen styles
+    if (window.matchMedia("(min-width:1000px)").matches) {
+        closeMenuButton.style.display = 'none'
+        openMenuButton.style.display = 'none'
+        menu.style.display = 'block'
+
+        // Small screen styles
+    } else {
+        const icon = document.getElementById('icon-navbar');
+
+        menu.style.display = 'none'
+        closeMenuButton.style.display = 'none'
+        openMenuButton.style.display = 'block'
+        icon.style.width = '130px'
+    }
 
 }
