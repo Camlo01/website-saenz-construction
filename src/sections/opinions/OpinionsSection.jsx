@@ -5,7 +5,7 @@ export default function Opinions() {
 
     return (
         <>
-            <div className="section-opinions">
+            <div className="section-opinions" id="opinions">
                 <div className="section-opinion__container">
                     <div id="carouselExample" className="carousel slide">
                         <div className="carousel-inner">

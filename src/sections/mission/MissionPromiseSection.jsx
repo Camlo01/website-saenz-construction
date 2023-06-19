@@ -3,7 +3,7 @@ import "./MissionPromiseSection.css"
 export default function MissionPromise() {
     return (
         <>
-            <div className="section-mission">
+            <div className="section-mission" id="mision">
                 <div className="section-mission__layer">
 
                     <div className="section-mission__container">

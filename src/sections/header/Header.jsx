@@ -31,12 +31,12 @@ export default function Header() {
                             <div className='navbar__menu' id='menu'>
                                 <button id='close-menu'>X</button>
                                 <ul className='navbar__list'>
-                                    <li><a href="" className='nav-button-item'>ROOFING</a></li>
-                                    <li><a href="" className='nav-button-item'>SIDING</a></li>
-                                    <li><a href="" className='nav-button-item'>INSURE CLAIMS</a></li>
-                                    <li><a href="" className='nav-button-item'>COLOR SELECTION</a></li>
-                                    <li><a href="" className='nav-button-item'>GALLERY</a></li>
-                                    <li><a href="" className='nav-button-item'>ABOUT</a></li>
+                                    <li><a href="#services" className='nav-button-item'>SERVICES</a></li>
+                                    <li><a href="#mision" className='nav-button-item'>MISION</a></li>
+                                    <li><a href="#opinions" className='nav-button-item'>OPINIONS</a></li>
+                                    <li><a href="#benefits" className='nav-button-item'>BENEFITS</a></li>
+                                    <li><a href="#portfolio" className='nav-button-item'>GALLERY</a></li>
+                                    <li><a href="#about" className='nav-button-item'>ABOUT</a></li>
                                 </ul>
                             </div>
                         </div>

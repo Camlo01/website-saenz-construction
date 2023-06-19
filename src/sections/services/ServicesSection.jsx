@@ -9,7 +9,7 @@ export default function Services() {
 
     return (
         <>
-            <section className="section-services">
+            <section className="section-services" id="services">
 
                 <div className="section-services__text">
                     <p id="our-services">OUR SERVICES</p>

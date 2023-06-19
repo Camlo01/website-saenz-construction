@@ -4,7 +4,7 @@ export default function Benefits() {
 
     return (
         <>
-            <div className="section-benefits">
+            <div className="section-benefits" id="benefits">
 
                 <div className="section-benefits__text">
                     <h2>WHY CHOOSE US</h2>
