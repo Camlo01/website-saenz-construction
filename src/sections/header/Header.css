@@ -107,23 +107,21 @@
 
 .navbar__list li a {
     text-decoration: none;
+    color: transparent;
     padding: 15px 15px;
     font-weight: 600;
     transition: all 0.3s;
 }
 
-
-
 /* Styles for Header section */
 
 .header {
     min-height: 900px;
-    padding-top: 183px;
+    padding-top: 130px;
     background-image: url("../images/roof.png");
     background-size: 100%;
     background-position-x: center;
     background-repeat: no-repeat;
-    /* background-position: center; */
 }
 
 .header__items-container {
