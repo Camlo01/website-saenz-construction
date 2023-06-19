@@ -1,8 +1,57 @@
 
 import './Header.css'
-import './HeaderLogic'
+import { navbarOpenMenu, navbarColor } from './HeaderLogic';
 
 export default function Header() {
+
+    /**
+     * Function to improve the nav items behavior
+     * @param {event} e - ignore the default behavior
+     * @param {String} whereToMove move the screen window to that section
+     */
+    function navItemBehavior(e, whereToMove) {
+        e.preventDefault();
+        document.getElementById(whereToMove).scrollIntoView({ behavior: 'smooth' });
+
+        //butons to hide
+        const menuNavbar = document.getElementById("menu")
+        const buttonCloseMenu = document.getElementById("close-menu")
+
+        // button to show
+        const buttonOpenMenu = document.getElementById("open-menu");
+
+        // In case of mobile view, the menu is hidden
+        if (window.matchMedia("(max-width: 1000px)").matches) {
+
+            buttonCloseMenu.style.display = "none"
+            menuNavbar.style.display = "none"
+            buttonOpenMenu.style.display = "block"
+        }
+    }
+
+    /**
+     * Function to handle open menu button behavior
+     * @param {event} e 
+     */
+    function openMenuHandler(e) {
+        e.preventDefault();
+        navbarOpenMenu();
+
+        // Buttons for behavior of display menu
+        const buttonOpenMenu = document.getElementById("open-menu");
+        const buttonCloseMenu = document.getElementById("close-menu")
+        const navbar = document.getElementById("navbarElement")
+        navbarColor();
+
+        // Menu for show
+        const menuNavbar = document.getElementById("menu")
+
+        buttonOpenMenu.style.display = "none";
+        navbar.style.backgroundColor = "white"
+        menuNavbar.style.display = "block"
+        buttonCloseMenu.style.display = "block"
+        buttonCloseMenu.style.margin = "25px 30px 25px auto"
+    }
 
     return (
         <>
@@ -24,23 +73,21 @@ export default function Header() {
                         </div>
 
                         <div className='navbar-menu'>
-                            <button id='open-menu'>|||</button>
+                            <button onClick={(e) => { openMenuHandler(e) }} id='open-menu'>|||</button>
                             <div className='navbar__menu' id='menu'>
                                 <button id='close-menu'>X</button>
                                 <ul className='navbar__list'>
-                                    <li><a href="#services" className='nav-button-item'>SERVICES</a></li>
-                                    <li><a href="#mision" className='nav-button-item'>MISION</a></li>
-                                    <li><a href="#opinions" className='nav-button-item'>OPINIONS</a></li>
-                                    <li><a href="#benefits" className='nav-button-item'>BENEFITS</a></li>
-                                    <li><a href="#portfolio" className='nav-button-item'>GALLERY</a></li>
-                                    <li><a href="#about" className='nav-button-item'>ABOUT</a></li>
+                                    <li><a onClick={(e) => navItemBehavior(e, "services")} className='nav-button-item'>SERVICES</a></li>
+                                    <li><a onClick={(e) => navItemBehavior(e, "mision")} className='nav-button-item'>MISION</a></li>
+                                    <li><a onClick={(e) => navItemBehavior(e, "opinions")} className='nav-button-item'>OPINIONS</a></li>
+                                    <li><a onClick={(e) => navItemBehavior(e, "benefits")} className='nav-button-item'>BENEFITS</a></li>
+                                    <li><a onClick={(e) => navItemBehavior(e, "portfolio")} className='nav-button-item'>GALLERY</a></li>
+                                    <li><a onClick={(e) => navItemBehavior(e, "about")} className='nav-button-item'>ABOUT</a></li>
                                 </ul>
                             </div>
                         </div>
 
                     </div>
-
-
 
                 </section>
                 <section className='header'>
