@@ -76,7 +76,7 @@ function navbarOpenMenu() {
 
 function navbarColor() {
 
-    const white = "var(--color-white)"
+    const white = "#fff"
     const red = "var(--color-red)"
     const blue = "var(--color-blue-king)"
     const gray = "var(--color-blue-gray)"
