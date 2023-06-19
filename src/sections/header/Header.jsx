@@ -77,12 +77,12 @@ export default function Header() {
                             <div className='rate-title__container'>
 
                                 <div className='header-rate-title__title'>
-                                    <h3>Buccos Roofing</h3>
+                                    <h3>Saenz Construction</h3>
                                     <h2>Pittsburgh Roofers</h2>
                                 </div>
 
                                 <div className='header-rate-title__body'>
-                                    <p>If you want to boost the curb appeal, energy efficiency, and longevity of your Pittsburgh home, you don’t have to look far to find a roofing and exterior renovation company you can trust. Local residents have been relying on Buccos Roofing since 2012—because they know we always put our customers first! Therefore, you can trust us to deliver exceptional results no matter your taste, budget, or needs.</p>
+                                    <p>If you want to boost the curb appeal, energy efficiency, and longevity of your Pittsburgh home, you don’t have to look far to find a roofing and exterior renovation company you can trust. Local residents have been relying on Saenz Construction since 2020—because they know we always put our customers first! Therefore, you can trust us to deliver exceptional results no matter your taste, budget, or needs.</p>
                                 </div>
 
                             </div>

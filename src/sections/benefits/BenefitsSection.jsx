@@ -8,7 +8,7 @@ export default function Benefits() {
 
                 <div className="section-benefits__text">
                     <h2>WHY CHOOSE US</h2>
-                    <p>The Benefits Of Hiring Buccos Roofing </p>
+                    <p>The Benefits Of Hiring Saenz Construction</p>
                 </div>
 
                 <div className="benefits-cards__container">

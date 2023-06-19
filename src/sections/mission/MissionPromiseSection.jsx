@@ -16,7 +16,7 @@ export default function MissionPromise() {
 
                             <div className="mission-body__mission">
                                 <h3>Our Mission</h3>
-                                <p>At Buccos Roofing, our mission is to provide a fast, reliable, and enjoyable experience for our clients—and that extends to every job, no matter how large or small.</p>
+                                <p>At Saenz Construction, our mission is to provide a fast, reliable, and enjoyable experience for our clients—and that extends to every job, no matter how large or small.</p>
                                 <p>We put our customers first, so you always receive the best service and highest-quality products from our industry-leading roofing experts!</p>
                             </div>
 
