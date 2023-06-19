@@ -4,11 +4,6 @@ import './HeaderLogic'
 
 export default function Header() {
 
-
-    function handleOpenMenu() {
-        // here should be behavior to manage the logic of open menu button
-    }
-
     return (
         <>
             <header>
@@ -23,11 +18,13 @@ export default function Header() {
                         <div className='navbar__buttons'>
                             <p id='phone-number'>(724) 554-6224</p>
                             <button id='call-button'>Call</button>
-                            <button id='free-quote-button'>FREE QUOTE</button>
+                            <button id='free-quote-button'>
+                                <a href="#get-free-quote">FREE QUOTE</a>
+                            </button>
                         </div>
 
                         <div className='navbar-menu'>
-                            <button onClick={handleOpenMenu} id='open-menu'>|||</button>
+                            <button id='open-menu'>|||</button>
                             <div className='navbar__menu' id='menu'>
                                 <button id='close-menu'>X</button>
                                 <ul className='navbar__list'>
@@ -55,10 +52,30 @@ export default function Header() {
                             <h1>Your Trusted Pittsburgh Roofing Company</h1>
                             <p>Our experienced roofing and exterior renovation contractors are experts in roof replacement, residential siding, new gutters and more!</p>
                             <div className='header__google-reviews'>
-                                {/* Empty  */}
                             </div>
                         </div>
-                        <div className='header__form'>
+
+                        <div className='header__form' id='get-free-quote'>
+
+                            <h2>Get Started Now</h2>
+
+                            <input placeholder='Full Name' type="text" />
+                            <input placeholder='Email Address' type="text" />
+                            <input placeholder='Phone Number' type="text" />
+                            <input placeholder='Full Address' type="text" />
+                            <select name="source" id="source-client">
+                                <option value="none" selected disabled>How did you hear about us?</option>
+                                <option value="Internet">Internet Search</option>
+                                <option value="Referral">Referral</option>
+                                <option value="Car">Saenz Car</option>
+                                <option value="Flyer">Flyer</option>
+                                <option value="Facebook">Facebook</option>
+                            </select>
+                            <textarea placeholder='Proyect Description' name="" id="" cols="30" rows="10"></textarea>
+                            <input placeholder='ZIP Code' type="text" />
+
+                            <button>GET FREE QUOTE</button>
+
                         </div>
                     </div>
 
