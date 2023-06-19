@@ -76,13 +76,50 @@ function navbarOpenMenu() {
 
 function navbarColor() {
 
+    const white = "var(--color-white)"
+    const red = "var(--color-red)"
+    const blue = "var(--color-blue-king)"
+    const gray = "var(--color-blue-gray)"
+    const ligthGray = "var(--color-ligth-gray)"
+
     const navbar = document.getElementById("navbarElement")
+    const phoneNumber = document.getElementById("phone-number")
+    const navButtons = document.getElementsByClassName("nav-button-item")
 
     if (position == referencePoint) {
         navbar.style.backgroundColor = "transparent";
+        phoneNumber.style.color = white
+
+        Array.from(navButtons).forEach(function (navItem) {
+            navItem.style.color = white
+
+            navItem.addEventListener("mouseover", function () {
+                navItem.style.color = blue;
+            });
+
+            navItem.addEventListener("mouseout", function () {
+                navItem.style.color = white;
+            });
+
+        });
+
     }
     if (position > referencePoint) {
-        navbar.style.backgroundColor = "white";
+        navbar.style.backgroundColor = white;
+        phoneNumber.style.color = red
+
+        Array.from(navButtons).forEach(function (navItem) {
+            navItem.style.color = ligthGray
+
+            navItem.addEventListener("mouseover", function () {
+                navItem.style.color = blue;
+            });
+
+            navItem.addEventListener("mouseout", function () {
+                navItem.style.color = ligthGray;
+            });
+
+        });
     }
 
 }
