@@ -1,8 +1,24 @@
 
+import { useState } from 'react';
 import './Header.css'
 import { navbarOpenMenu, navbarColor } from './HeaderLogic';
 
 export default function Header() {
+
+    const [fullName, setFullName] = useState('')
+    const [email, setEmail] = useState('')
+    const [phone, setPhone] = useState('')
+    const [address, setAddress] = useState('')
+    const [source, setSource] = useState('')
+    const [description, setDescription] = useState('')
+    const [zip, setZip] = useState('')
+
+    // const handleGetFreeQuote = () => {
+
+    //     const data = { fullName, email, phone, address, source, description, zip }
+    //     // sendEmail(data); // Method that should go in other class with the logic of send emails
+
+    // }
 
     /**
      * Function to improve the nav items behavior
@@ -102,28 +118,30 @@ export default function Header() {
                             </div>
                         </div>
 
-                        <div className='header__form' id='get-free-quote'>
+                        <form action='https://formsubmit.co/a5ffb29a18338d761ffae78c515265c5' method='POST' className='header__form' id='get-free-quote'>
 
                             <h2>Get Started Now</h2>
 
-                            <input placeholder='Full Name' type="text" />
-                            <input placeholder='Email Address' type="text" />
-                            <input placeholder='Phone Number' type="text" />
-                            <input placeholder='Full Address' type="text" />
-                            <select name="source" id="source-client">
+                            <input name='Full Name' onChange={e => { setFullName(e.target.value) }} placeholder='Full Name' type="text" />
+                            <input name='Email Address' onChange={e => { setEmail(e.target.value) }} placeholder='Email Address' type="text" />
+                            <input name='Phone Number' onChange={e => { setPhone(e.target.value) }} placeholder='Phone Number' type="text" />
+                            <input name='Full Address' onChange={e => { setAddress(e.target.value) }} placeholder='Full Address' type="text" />
+                            <select name="From Where heard about us" id="source-client" onChange={e => { setSource(e.target.value) }} >
                                 <option value="none" selected disabled>How did you hear about us?</option>
-                                <option value="Internet">Internet Search</option>
+                                <option value="Internet Search">Internet Search</option>
                                 <option value="Referral">Referral</option>
-                                <option value="Car">Saenz Car</option>
+                                <option value="Saenz Car">Saenz Car</option>
                                 <option value="Flyer">Flyer</option>
                                 <option value="Facebook">Facebook</option>
                             </select>
-                            <textarea placeholder='Proyect Description' name="" id="" cols="30" rows="10"></textarea>
-                            <input placeholder='ZIP Code' type="text" />
+                            <textarea name='Proyect description' onChange={e => { setDescription(e.target.value) }} placeholder='Proyect Description' cols="30" rows="10"></textarea>
+                            <input name='ZIP code' onChange={e => { setZip(e.target.value) }} placeholder='ZIP Code' type="text" />
 
-                            <button>GET FREE QUOTE</button>
+                            <button type="submit" value='enviar' >GET FREE QUOTE</button>
+                            <input type="hidden" name='_next' value='https://saenz-construction.com' />
+                            <input type="hidden" name='_captcha' value='false' />
 
-                        </div>
+                        </form>
                     </div>
 
                     <div className='header-rate'>
