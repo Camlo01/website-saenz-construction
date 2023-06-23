@@ -7,7 +7,7 @@ export default function Opinions() {
         <>
             <div className="section-opinions" id="opinions">
                 <div className="section-opinion__container">
-                    <div id="carouselExample" className="carousel slide">
+                    <div id="carouselOpinions" className="carousel slide">
                         <div className="carousel-inner">
                             <div className="carousel-item active">
                                 <div className="opinions-section__card">
@@ -20,11 +20,11 @@ export default function Opinions() {
                                 </div>
                             </div>
                         </div>
-                        <button className="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                        <button className="carousel-control-prev" type="button" data-bs-target="#carouselOpinions" data-bs-slide="prev">
                             <span className="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span className="visually-hidden">Previous</span>
                         </button>
-                        <button className="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                        <button className="carousel-control-next" type="button" data-bs-target="#carouselOpinions" data-bs-slide="next">
                             <span className="carousel-control-next-icon" aria-hidden="true"></span>
                             <span className="visually-hidden">Next</span>
                         </button>
