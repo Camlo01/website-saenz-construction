@@ -10,7 +10,7 @@ export default function About() {
                 <div className="section-about__container">
 
                     <div className="section-about__image">
-                        <img src="" alt="" />
+                        <img src="../images/saenz-way.jpg" alt="" />
                     </div>
 
                     <div className="section-about__body">
