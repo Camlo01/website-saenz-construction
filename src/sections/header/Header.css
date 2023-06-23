@@ -118,10 +118,11 @@
 .header {
     min-height: 900px;
     padding-top: 130px;
-    background-image: url("../images/roof.png");
-    background-size: 100%;
-    background-position-x: center;
-    background-repeat: no-repeat;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 5) 0%, rgba(185, 214, 247, 0) 100%), url("../images/roof.png") no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-position: center;
+    /* background-size: 100%; */
 }
 
 .header__items-container {
@@ -130,7 +131,6 @@
     justify-content: space-around;
     max-width: 1400px;
     margin: 0 auto;
-    background-color: rgba(0, 0, 0, 0.473);
 }
 
 
@@ -154,7 +154,7 @@
 /* Styles for form */
 
 .header__form {
-    background-color: #262626c4;
+    background-color: var(--color-dark-blue-king);
     min-width: 318px;
     max-width: 240px;
     border-radius: 8px;
@@ -269,7 +269,7 @@ textarea {
     display: flex inherit;
     flex-direction: column;
     padding: 30px 20px;
-    background-color: #262626;
+    background-color: var(--color-blue-king);
     width: 100%;
 }
 
