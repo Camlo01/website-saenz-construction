@@ -2,7 +2,7 @@
   "name": "saenz-construction",
   "private": true,
   "homepage": "https://Camlo01.github.io/website-saenz-construction",
-  "version": "0.0.0",
+  "version": "1.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
