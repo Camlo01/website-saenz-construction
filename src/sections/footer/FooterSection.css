@@ -1,5 +1,5 @@
 .section-footer {
-    background-color: #262626;
+    background-color: var(--color-blue-king);
     border-top: solid 8px var(--color-yellow);
     color: white;
     color: var(--color-white);
