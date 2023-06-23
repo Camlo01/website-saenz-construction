@@ -75,7 +75,7 @@ export default function Header() {
                 <section className='section-navbar' id='navbarElement'>
 
                     <div className='navbar__image' >
-                        <img className='logo' src={'../icons/saenz-house-icon.png'} alt="Logo de la empresa" id='icon-navbar' />
+                        <img className='logo' src={'../icons/icon-web-saenz.png'} alt="Logo de la empresa" id='icon-navbar' />
                     </div>
 
                     <div className='section-navbar-elements'>
@@ -148,10 +148,10 @@ export default function Header() {
 
                         <div className='header-rate__calification'>
 
-                            <div className='rate-calification__card'><img src="" alt="" /><div className='calification-card__text'><h2>4.9</h2><p>OUT OF 493 REVIEWS</p></div></div>
-                            <div className='rate-calification__card'><img src="" alt="" /><div className='calification-card__text'><h2>4.9</h2><p>OUT OF 99 REVIEWS</p></div></div>
-                            <div className='rate-calification__card'><img src="" alt="" /><div className='calification-card__text'><h2>A+</h2><p>OUT OF 17 REVIEWS</p></div></div>
-                            <div className='rate-calification__card'><img src="" alt="" /><div className='calification-card__text'><h2>4.9</h2><p>OUT OF 109 REVIEWS</p></div></div>
+                            <div className='rate-calification__card'><img src="../icons/social/rating-facebook.svg" alt="" /><div className='calification-card__text'><h2>4.9</h2><p>OUT OF 493 REVIEWS</p></div></div>
+                            <div className='rate-calification__card'><img src="../icons/social/rating-google.svg" alt="" /><div className='calification-card__text'><h2>4.9</h2><p>OUT OF 99 REVIEWS</p></div></div>
+                            <div className='rate-calification__card'><img src="../icons/social/rating-whatsapp.svg" alt="" /><div className='calification-card__text'><h2>A+</h2><p>OUT OF 17 REVIEWS</p></div></div>
+                            <div className='rate-calification__card'><img src="../icons/social/rating-linkedin.svg" alt="" /><div className='calification-card__text'><h2>4.9</h2><p>OUT OF 109 REVIEWS</p></div></div>
                         </div>
 
                         <div className='header-rate-title'>
