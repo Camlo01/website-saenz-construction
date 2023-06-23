@@ -1,5 +1,5 @@
 .section-mission {
-    background-image: url('../images/roof.png');
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%), url("../images/roof.png") no-repeat;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -7,7 +7,6 @@
 }
 
 .section-mission__layer {
-    background-color: rgba(0, 0, 0, 0.363);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -51,7 +50,7 @@
 
 
     .section-mission__layer {
-        background-color: rgba(0, 0, 0, 0.507);
+        /* background-color: rgba(0, 0, 0, 0.507); */
         height: 545px;
         padding-top: 00px;
         display: flex;
