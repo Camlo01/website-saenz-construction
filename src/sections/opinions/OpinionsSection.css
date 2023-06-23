@@ -1,7 +1,9 @@
 .section-opinions {
-
-    background-image: linear-gradient(to right top, #2a2a2a, #4c4b4c, #716e70, #989495, #c2bbbb);
-
+    background: rgb(0, 0, 0);
+    background: -moz-linear-gradient(90deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.45) 25%, rgba(0, 0, 0, 0.45) 75%, rgba(0, 0, 0, 0.1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.45) 25%, rgba(0, 0, 0, 0.45) 75%, rgba(0, 0, 0, 0.1) 100%);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.45) 25%, rgba(0, 0, 0, 0.45) 75%, rgba(0, 0, 0, 0.1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000", endColorstr="#000000", GradientType=1);
 }
 
 .section-opinion__container {
