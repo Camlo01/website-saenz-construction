@@ -7,11 +7,11 @@ export default function Footer() {
 
                 <div className="section-footer__container">
 
-                    <div className='section-footer__locations' id='section-footer__locations'>
-                        <img src="../icons/icon-saenz.jpeg" alt="" />
+                    <div className='section-footer__column' id='section-footer__locations'>
+                        <img src="../icons/wolf-icon2.png" alt="" />
                         <p className='footer-locations__title'>Saenz Construction Pittsburgh pensilvania</p>
-                        <p>4708 Theodore </p>
-                        <p>Street 15120</p>
+                        <a href=""></a>
+                        <p>4708 Theodore Street 15120</p>
                         <p>(412) 721-3612</p>
                     </div>
 
