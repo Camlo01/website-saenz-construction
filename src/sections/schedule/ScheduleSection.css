@@ -30,7 +30,7 @@
     border: solid 0.5 white;
 }
 
-.section-schedule__body button a {
+.section-schedule__body button{
     color: white;
     text-decoration: none;
 }
