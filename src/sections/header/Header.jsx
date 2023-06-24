@@ -81,7 +81,7 @@ export default function Header() {
                     <div className='section-navbar-elements'>
 
                         <div className='navbar__buttons'>
-                            <p id='phone-number'>(724) 554-6224</p>
+                            <p id='phone-number'>(412) 721-3612</p>
                             <button id='call-button'>Call</button>
                             <button id='free-quote-button'>
                                 <a href="#get-free-quote">FREE QUOTE</a>
