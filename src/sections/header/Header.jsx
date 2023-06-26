@@ -1,5 +1,5 @@
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import './Header.css'
 import { navbarOpenMenu, navbarColor } from './HeaderLogic';
 
@@ -93,12 +93,12 @@ export default function Header() {
                             <div className='navbar__menu' id='menu'>
                                 <button id='close-menu'>X</button>
                                 <ul className='navbar__list'>
-                                    <li><a onClick={(e) => navItemBehavior(e, "services")} className='nav-button-item'>SERVICES</a></li>
-                                    <li><a onClick={(e) => navItemBehavior(e, "mision")} className='nav-button-item'>MISION</a></li>
-                                    <li><a onClick={(e) => navItemBehavior(e, "opinions")} className='nav-button-item'>OPINIONS</a></li>
-                                    <li><a onClick={(e) => navItemBehavior(e, "benefits")} className='nav-button-item'>BENEFITS</a></li>
-                                    <li><a onClick={(e) => navItemBehavior(e, "portfolio")} className='nav-button-item'>GALLERY</a></li>
-                                    <li><a onClick={(e) => navItemBehavior(e, "about")} className='nav-button-item'>ABOUT</a></li>
+                                    <li><a href="#services" onClick={(e) => navItemBehavior(e, "services")} className='nav-button-item'>SERVICES</a></li>
+                                    <li><a href="#mision" onClick={(e) => navItemBehavior(e, "mision")} className='nav-button-item'>MISION</a></li>
+                                    <li><a href="#opinions" onClick={(e) => navItemBehavior(e, "opinions")} className='nav-button-item'>OPINIONS</a></li>
+                                    <li><a href="#benefits" onClick={(e) => navItemBehavior(e, "benefits")} className='nav-button-item'>BENEFITS</a></li>
+                                    <li><a href="#portfolio" onClick={(e) => navItemBehavior(e, "portfolio")} className='nav-button-item'>GALLERY</a></li>
+                                    <li><a href="#about" onClick={(e) => navItemBehavior(e, "about")} className='nav-button-item'>ABOUT</a></li>
                                 </ul>
                             </div>
                         </div>
