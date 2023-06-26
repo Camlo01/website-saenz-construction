@@ -69,21 +69,21 @@
 
 /* Here should be the image for every card in benefits section */
 #benefit-card__first {
-    background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0) 100%), url(../images/benefit-card-1.jpg);
+    background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0) 100%), url(../images/benefit-card-1.webp);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 #benefit-card__second {
-    background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0) 100%), url(../images/benefit-card-2.jpg);
+    background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0) 100%), url(../images/benefit-card-2.webp);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 #benefit-card__third {
-    background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0) 100%), url(../images/benefit-card-3.jpg);
+    background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0) 100%), url(../images/benefit-card-3.webp);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
