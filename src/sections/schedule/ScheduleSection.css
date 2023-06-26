@@ -10,7 +10,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0) 100%), url(../images/schedule.jpg);
+    background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0) 100%), url(../images/schedule.webp);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
