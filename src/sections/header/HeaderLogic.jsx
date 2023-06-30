@@ -7,9 +7,14 @@ let referencePoint;
  * When the page finished loading
  */
 window.onload = () => {
-    navbarColor()
-    navbarOpenMenu()
-}
+
+    // to fix problem when the website load
+        setTimeout(() => {
+            navbarColor()
+            navbarOpenMenu()
+            console.log("Message in console")
+        }, 250);
+    }
 
 /** 
  * When the screen size changes
