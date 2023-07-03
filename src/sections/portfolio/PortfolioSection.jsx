@@ -1,4 +1,5 @@
 import './PortfolioSection.css'
+import { Link } from 'react-router-dom'
 // import 'bootstrap/dist/js/bootstrap.bundle';
 
 export default function Portfolio() {
@@ -12,7 +13,10 @@ export default function Portfolio() {
                         <h2>project portfolio</h2>
                         <h3>Gallery Of Home Remodeling Projects</h3>
                         <p>To find inspiration for your next home upgrade, we encourage you to look through our gallery of completed home remodeling projects.</p>
-                        <button>VIEW GALLERY</button>
+
+                        <Link to="/gallery">
+                            <button>VIEW GALLERY</button>
+                        </Link>
                     </div>
 
                     <div className='section-portfolio-photos'>

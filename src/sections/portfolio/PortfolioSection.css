@@ -39,7 +39,7 @@
     padding: 10px 50px;
     border-radius: 25px;
     border: solid 1px rgb(175, 173, 173);
-    display: none;
+    /* display: none; */
 }
 
 .section-portfolio-photos img {
@@ -82,7 +82,7 @@
         padding: 10px 50px;
         border-radius: 25px;
         border: solid 1px rgb(175, 173, 173);
-        display: none;
+        /* display: none; */
     }
 
     .section-portfolio-photos {
