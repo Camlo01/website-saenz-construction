@@ -4,6 +4,7 @@ import App from './App.jsx'
 import './index.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import Gallery from './pages/Gallery.jsx';
 
 const router = createBrowserRouter([
   {
@@ -13,7 +14,7 @@ const router = createBrowserRouter([
   ,
   {
     path: "/gallery",
-    element: <h1>gallery</h1>
+    element: <Gallery/>
   }
 ])
 
