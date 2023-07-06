@@ -1,5 +1,9 @@
+import { useEffect } from "react"
 import Footer from "../../sections/footer/FooterSection"
 import "./Gallery.css"
+
+import { Link } from 'react-router-dom'
+
 
 /**
  * 
@@ -7,11 +11,18 @@ import "./Gallery.css"
  */
 export default function Gallery() {
 
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, null)
+
+
     return (
         <>
             <div className="gallery_page">
 
-                <button className="yellow-button">back to home</button>
+                <Link to={"/"}>
+                    <button className="yellow-button">back to home</button>
+                </Link>
 
                 <div className="gallery_title">
 
