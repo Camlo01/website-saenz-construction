@@ -1,0 +1,29 @@
+.gallery_page{
+    padding: 30px 0;
+}
+.yellow-button {
+    padding: 5px 25px;
+    background-color: var(--color-yellow);
+    border-radius: 90px;
+}
+
+/* Card styles */
+
+.gallery_photos{
+    display: flex;
+    flex-direction: column;
+}
+
+.photos_card__container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.photos_card__container__imnage{
+    background-color: gray;
+    min-height: 120px;
+    min-width: 280px;
+    margin: 30px;
+
+}
