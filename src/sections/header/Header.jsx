@@ -13,6 +13,18 @@ export default function Header() {
     const [description, setDescription] = useState('')
     const [zip, setZip] = useState('')
 
+    useEffect(() => {
+      
+        // to fix problem when the website load
+        setTimeout(() => {
+            navbarColor()
+            navbarOpenMenu()
+            console.log("Message in console")
+        }, 250);
+
+    }, null)
+    
+
     // const handleGetFreeQuote = () => {
 
     //     const data = { fullName, email, phone, address, source, description, zip }
@@ -122,10 +134,10 @@ export default function Header() {
 
                             <h2>Get Started Now</h2>
 
-                            <input name='Full Name' onChange={e => { setFullName(e.target.value) }} placeholder='Full Name' type="text" />
-                            <input name='Email Address' onChange={e => { setEmail(e.target.value) }} placeholder='Email Address' type="text" />
-                            <input name='Phone Number' onChange={e => { setPhone(e.target.value) }} placeholder='Phone Number' type="text" />
-                            <input name='Full Address' onChange={e => { setAddress(e.target.value) }} placeholder='Full Address' type="text" />
+                            <input name='Full Name' onChange={e => { setFullName(e.target.value) }} placeholder='Full Name' type='text' />
+                            <input name='Email Address' onChange={e => { setEmail(e.target.value) }} placeholder='Email Address' type='email'/>
+                            <input name='Phone Number' onChange={e => { setPhone(e.target.value) }} placeholder='Phone Number' type='text'/>
+                            <input name='Full Address' onChange={e => { setAddress(e.target.value) }} placeholder='Full Address' type='text' />
                             <select name="From Where heard about us" id="source-client" onChange={e => { setSource(e.target.value) }} >
                                 <option value="none" selected disabled>How did you hear about us?</option>
                                 <option value="Internet Search">Internet Search</option>
