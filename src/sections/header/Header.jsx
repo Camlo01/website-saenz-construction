@@ -33,7 +33,7 @@ export default function Header() {
             zip: zip
         }
 
-        sendEmail({ data, setDisabledForm});
+        sendEmail({ data, setDisabledForm });
 
     }
 
@@ -213,14 +213,10 @@ async function sendEmail(props) {
                 body: JSON.stringify(data)
             })
 
-            const status = response.status;
-            console.log(status)
-
-            if (status == 200){
+            if (response.status == 200) {
                 alert("The message was sent successfully")
                 props.setDisabledForm(true)
             }
-
 
         } catch (e) {
             console.log("Something Went Wrong!")
@@ -249,7 +245,7 @@ function isValidForm(data) {
     }
 
     if (descriptionExceedLimit(data.description)) {
-        alert("Theres a limit of 350 characters")
+        alert("Theres a limit of 350 characters, current size of " + data.description.length)
         return false
     }
     return true
