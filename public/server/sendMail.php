@@ -1,67 +1,63 @@
 <?php
 
-if ($_SERVER["REQUEST_METHOD"] === "POST") {
+$allowed_origins = [
+    'http://saenz-construction.com/',
+    'http://www.saenz-construction.com/',
+    'https://saenz-construction.com/',
+    'https://www.saenz-construction.com/',
+];
 
-    $config = [
-        'host' => 'smtp.hostinger.com',
-        'port' => 465,
-        'username' => 'noreply@saenz-construction.com',
-        'password' => 'sB5=Fec)pvMy0!L]^c730q'
-    ];
+if (isset($_SERVER['HTTP_ORIGIN']) && in_array($_SERVER['HTTP_ORIGIN'], $allowed_origins)) {
+    header("Access-Control-Allow-Origin: {$_SERVER['HTTP_ORIGIN']}");
+}
 
-    // Configure the SMTP Server
-    ini_set("SMTP", $config['host']);
-    ini_set("smtp_port", $config['port']);
-    ini_set("username", $config['username']);
+header("Access-Control-Allow-Methods: POST");
+header("Access-Control-Allow-Headers: Content-Type, Authorization");
 
-    // set the values into variables
-    $data = json_decode(file_get_contents("php://input"), true);
+use PHPMailer\PHPMailer\PHPMailer;
 
-    $fullName = $data['fullName'];
-    $email = $data['email'];
-    $phone = $data['phone'];
-    $address = $data['address'];
-    $source = $data['source'];
-    $description = $data['description'];
-    $zip = $data['zip'];
+require 'vendor/autoload.php';
 
-    // Configure mail content
-    $to = "sales@saenz-construction.com";
-    $subject = "New Message! " . $fullName;
-    $messageBody = "
-    From: $fullName \n
-    Email: $email \n
-    Phone: $phone \n\n
-
-    Description: $description \n\n
-
-    Source: $source \n
-    Address: $Address \n
-    Zip: $zip\n
-        ";
+$data = json_decode(file_get_contents("php://input"), true);
+$name = $data['fullName'];
+$email = $data['email'];
+$phone = $data['phone'];
+$address = $data['address'];
+$zip = $data['zip'];
+$source = $data['source'];
+$message = $data['description'];
 
 
-    // Configure headers
-    $headers = "From: $email\r\n";
-    $headers .= "Reply-To: $email\r\n";
-    $headers .= "MIME-Version: 1.0\r\n";
-    $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
+$mail = new PHPMailer;
+$mail->isSMTP();
+$mail->Host = 'smtp.hostinger.com';
+$mail->Port = 587;
+$mail->SMTPAuth = true;
+$mail->SMTPSecure = "tls";
+$mail->Username = 'noreply@saenz-construction.com';
+$mail->Password = 'sB5=Fec)pvMy0!L]^c730q';
+$mail->setFrom('noreply@saenz-construction.com', 'Message Email');
+$mail->addAddress('sales@saenz-construction.com', 'Camilo Beltrán');
+if ($mail->addReplyTo($email, $name)) {
+    $mail->Subject = 'New Message! ';
+    $mail->isHTML(false);
+    $mail->Body = <<<EOT
+    Email: $email
+    Fullname: $name
+    Phone: $phone
+    Addres: $address - ZIP: $zip
 
-    // Encabezados de autenticación
-    $headers .= "Return-Path: <$email>\r\n";
-    $headers .= "X-Sender: $email\r\n";
-    $headers .= "X-Mailer: PHP\r\n";
-    $headers .= "X-Priority: 1\r\n";
+    Source: $source
 
-    if (mail($to, $subject, $messageBody, $headers)) {
-        $response = array("success" => true, "message" => "It was sent successfully");
-        http_response_code(200);
+    Message: $message
+EOT;
+    if (!$mail->send()) {
+        $response = array("success" => false, "message" => "Error al enviar el correo");
+        http_response_code(500);
         echo json_encode($response);
     } else {
-        $response = array("success" => false, "message" => "Something went wrong!");
-        http_response_code(500);
+        $response = array("success" => true, "message" => "Correo enviado correctamente");
+        http_response_code(200);
         echo json_encode($response);
     }
 }
-
-?>
